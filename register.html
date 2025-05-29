@@ -51,9 +51,13 @@
       <div class="form-card">
         <h2 class="form-heading">CREATE ACCOUNT</h2>
         <form>
+          <input type="text" placeholder="Full Name" class="input-field" required />
           <input type="email" placeholder="Email Address" class="input-field" required />
           <input type="password" placeholder="Password" class="input-field" required />
-          <button type="submit" class="signup-button">LOGIN</button>
+          <label class="privacy-policy">
+            <input type="checkbox" required /> I Agree to the Privacy Policy
+          </label>
+          <button type="submit" class="signup-button">SIGN UP</button>
         </form>
         <div class="divider">
           <span class="divider-line"></span>
@@ -64,6 +68,8 @@
           <img src="./imgs/GOOGLE.png" alt="Google" class="social-icon" />
           <img src="./imgs/FACEBOOK.png" alt="Facebook" class="social-icon" />
         </div>
+        <p class="account-text">ALREADY HAVE AN ACCOUNT?</p>
+        <button class="signin-button">SIGN IN</button>
       </div>
     </div>
   </div>

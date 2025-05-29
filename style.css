@@ -39,8 +39,8 @@
 
 /* Header Appointment Button Styling */
 .header-appointment-button {
-  background-color: #A52A2A; /* Dark red color */
-  color: #ffffff;
+  background-color: #A52A2A; /* Example background color */
+  color: #ffffff; /* Text color */
   font-family: "Inter-SemiBold", Helvetica;
   font-weight: 600;
   font-size: 16px;
@@ -49,11 +49,11 @@
   border-radius: 20px;
   cursor: pointer;
   transition: all 0.3s ease;
-  margin-bottom: 20px; /* Space below the button */
+  margin-bottom: 10px; /* Space between buttons */
 }
 
 .header-appointment-button:hover {
-  background-color: #8B1A1A; /* Darker red on hover */
+  background-color: #8B1A1A; /* Darker color on hover */
 }
 
 .header-appointment-button:active {
@@ -473,7 +473,7 @@ body {
 
 /* Vision Mission Section */
 .vision-mission-section {
-  margin-top: 100px; /* 100px spacing below About Us section */
+  margin-top: 100px; /* 100px spacing below hero image */
   padding: 0 40px;
   max-width: 1290px;
   margin-left: auto;
@@ -1079,9 +1079,12 @@ body {
   height: 265px; /* Fixed height */
   background-color: #F2EDE5; /* Light beige background */
   width: 100%; /* Full width */
+  padding: 20px 0; /* Padding for top and bottom */
 }
 
 .footer-background {
+  width: 100%;
+  display: block;
   height: 265px; /* Fixed height */
   background-color: #ffffff; /* White background for content area */
   padding: 20px; /* Padding for top and bottom */
@@ -1093,6 +1096,7 @@ body {
   align-items: flex-start; /* Align items at the start */
   max-width: 1200px; /* Max width for the footer */
   margin: 0 auto; /* Center the footer */
+  padding: 0 20px; /* Consistent padding on the sides */
   flex-wrap: wrap; /* Allow wrapping for responsiveness */
 }
 
@@ -1158,6 +1162,7 @@ body {
 }
 
 .footer-support-link {
+  font-family: "Inter", Helvetica;
   text-decoration: none; /* Remove underline */
   color: #000000; /* Link color */
 }
@@ -1177,4 +1182,186 @@ body {
     text-align: center; /* Center align text in columns */
     margin-bottom: 20px; /* Space below each column */
   }
+}
+
+.registration-section {
+  background-color: #F2EDE5; /* Light beige background for the section */
+  padding: 40px 20px; /* Padding for top and bottom */
+}
+
+.registration-content {
+  display: flex;
+  justify-content: space-between; /* Space columns evenly */
+  max-width: 1200px; /* Max width for the section */
+  margin: 0 auto; /* Center the section */
+  flex-wrap: wrap; /* Allow wrapping for responsiveness */
+}
+
+.left-column {
+  flex: 1; /* Allow left column to grow */
+  min-width: 300px; /* Minimum width for left column */
+  display: flex; /* Flex display for vertical alignment */
+  flex-direction: column; /* Stack children vertically */
+  justify-content: center; /* Center align vertically */
+  align-items: flex-start; /* Align items to the start */
+}
+
+.main-heading {
+  font-family: "Inter-Bold", Helvetica;
+  font-size: 36px; /* Large font size */
+  color: #6B6B00; /* Olive green color */
+  margin: 0 0 15px; /* Space below heading */
+}
+
+.welcome-text {
+  font-family: "Inter-Regular", Helvetica;
+  font-size: 18px; /* Readable font size */
+  color: #333333; /* Dark text color */
+  line-height: 1.5; /* Consistent line height for readability */
+  margin: 0; /* Remove default margin */
+}
+
+.right-column {
+  flex: 1; /* Allow right column to grow */
+  min-width: 300px; /* Minimum width for right column */
+}
+
+.form-card {
+  background: linear-gradient(to bottom, #ffcccb, #8B0000); /* Light pink to deep red gradient */
+  border-radius: 12px; /* Rounded corners */
+  padding: 20px; /* Padding inside the card */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.form-heading {
+  font-family: "Inter-Bold", Helvetica;
+  font-size: 24px;
+  color: #8B0000; /* Dark red */
+  text-align: center; /* Center align heading */
+  margin-bottom: 20px; /* Space below heading */
+}
+
+.input-field {
+  width: 100%; /* Full width */
+  padding: 10px; /* Padding inside input */
+  margin-bottom: 15px; /* Space below input */
+  border: 1px solid #ccc; /* Border color */
+  border-radius: 5px; /* Rounded corners */
+}
+
+.privacy-policy {
+  display: block; /* Block display for checkbox */
+  margin-bottom: 15px; /* Space below checkbox */
+}
+
+.signup-button {
+  width: 100%; /* Full width */
+  padding: 10px; /* Padding inside button */
+  background-color: #FFD700; /* Yellow background */
+  border: none; /* No border */
+  border-radius: 5px; /* Rounded corners */
+  font-family: "Inter-Bold", Helvetica;
+  font-size: 16px;
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: background-color 0.3s; /* Transition for hover effect */
+}
+
+.signup-button:hover {
+  background-color: #FFC107; /* Darker yellow on hover */
+}
+
+.divider {
+  display: flex; /* Flex display for divider */
+  align-items: center; /* Center align items */
+  margin: 20px 0; /* Space above and below divider */
+}
+
+.divider-line {
+  flex: 1; /* Take up available space */
+  height: 1px; /* Line height */
+  background-color: #ccc; /* Line color */
+}
+
+.or-text {
+  margin: 0 10px; /* Space around text */
+  font-family: "Inter-Regular", Helvetica;
+  color: #333333; /* Dark text color */
+}
+
+.social-login {
+  display: flex; /* Flex display for social icons */
+  justify-content: center; /* Center align icons */
+  margin-bottom: 15px; /* Space below icons */
+}
+
+.social-icon {
+  width: 30px; /* Icon size */
+  height: 30px; /* Icon size */
+  margin: 0 10px; /* Space between icons */
+}
+
+.account-text {
+  text-align: center; /* Center align text */
+  margin: 10px 0; /* Space above and below text */
+}
+
+.signin-button {
+  width: 100%; /* Full width */
+  padding: 10px; /* Padding inside button */
+  background-color: #FFD700; /* Yellow background */
+  border: none; /* No border */
+  border-radius: 5px; /* Rounded corners */
+  font-family: "Inter-Bold", Helvetica;
+  font-size: 16px;
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: background-color 0.3s; /* Transition for hover effect */
+}
+
+.signin-button:hover {
+  background-color: #FFC107; /* Darker yellow on hover */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .registration-content {
+    flex-direction: column; /* Stack columns on smaller screens */
+    align-items: center; /* Center align columns */
+  }
+
+  .left-column, .right-column {
+    text-align: center; /* Center align text in columns */
+    margin-bottom: 20px; /* Space below each column */
+  }
+}
+
+.location-dropdown {
+  margin: 20px 0; /* Space above and below the dropdown */
+}
+
+.dropdown-label {
+  font-family: "Inter-Regular", Helvetica;
+  font-size: 16px;
+  color: #333333; /* Dark text color */
+  margin-bottom: 8px; /* Space below label */
+  display: block; /* Block display for label */
+}
+
+.dropdown-select {
+  width: 100%; /* Full width */
+  padding: 10px; /* Padding inside select */
+  border: 1px solid #ccc; /* Border color */
+  border-radius: 5px; /* Rounded corners */
+  font-family: "Inter-Regular", Helvetica;
+  font-size: 16px;
+  background-color: #ffffff; /* White background */
+  appearance: none; /* Remove default arrow */
+  background-image: url('./imgs/arrow-down.svg'); /* Custom arrow image */
+  background-repeat: no-repeat; /* No repeat */
+  background-position: right 10px center; /* Position the arrow */
+  background-size: 15px; /* Size of the arrow */
+}
+
+/* Style for the dropdown options */
+.dropdown-select option {
+  padding: 10px; /* Padding for options */
 }
