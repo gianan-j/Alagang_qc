@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="globals.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="HEADER">
+      <header class="header">
+        <div class="frame">
+          <div class="LOGO"></div>
+        </div>
+        <div class="div">
+          <div class="TEXT-HOVER">
+            <a href="index.html" class="nav-link">HOME</a>
+          </div>
+          <div class="TEXT-HOVER">
+            <a href="aboutus.html" class="nav-link">ABOUT US</a>
+          </div>
+          <div class="TEXT-HOVER">
+            <a href="services.html" class="nav-link">SERVICES</a>
+          </div>
+          <div class="LOCATION-DROPDOWN">
+            <button class="dropdown-button" aria-haspopup="true" aria-expanded="false" onclick="toggleDropdown()">
+              <span class="text-wrapper-2">LOCATION</span>
+              <img class="ri-arrow-down-s-line" src="./imgs/ri_arrow-down-s-line.png" alt="Dropdown arrow" />
+            </button>
+            <div class="dropdown-menu" id="locationDropdown">
+              <a href="district_1.html" class="dropdown-item">District I</a>
+              <a href="district_2.html" class="dropdown-item">District II</a>
+              <a href="district_3.html" class="dropdown-item">District III</a>
+              <a href="district_4.html" class="dropdown-item">District IV</a>
+              <a href="district_5.html" class="dropdown-item">District V</a>
+              <a href="district_6.html" class="dropdown-item">District VI</a>
+            </div>
+          </div>
+        </div>
+      </header>
+    </div>
+    
+    <section class="district-section">
+      <div class="district-text">
+        <h1 class="district-title">District III</h1>
+        <h2 class="district-subheading">Strengthening Healthcare Outreach</h2>
+        <p class="district-description">
+          District 3 covers a significant portion of Southern Quezon City, known for its vibrant communities it focus on preventive care and emergency services, their health programs address the challenges head-on.
+          The District recorded a notable number of dengue cases, prompting the local government to ramp up efforts in disease prevention.. Health and wellness caravans are regularly conducted, offering free consultations and vaccination drives, while public health education is a top priority.
+        </p>
+      </div>
+      <img src="./imgs/district_3.jpg" alt="District III Image" class="district-image" />
+    </section>
+
+    <section class="health-services-section">
+      <h2 class="health-services-title">Health Services Information</h2>
+      <h3 class="health-services-subheading">List of centers and hospitals:</h3>
+      <div class="health-services-details">
+        <ul>
+            <li>E. Rodriguez Health Center - <a href="mailto:erodriguezhc.cityhealth@quezoncity.gov.ph">150 Pajo Street, Project 2, Brgy. Quirino 2-B</a><br>
+            7117 1761 | <a href="mailto:erodriguezhc.cityhealth@quezoncity.gov.ph">erodriguezhc.cityhealth@quezoncity.gov.ph</a> | Dr. Fe S. Florendo</li>
+
+            <li>Ermin Garcia Health Center - <a href="mailto:ermingarciahc.cityhealth@quezoncity.gov.ph">53 Cambridge Street, Brgy. E. Rodriguez, Cubao</a><br>
+            7000 2314 | <a href="mailto:ermingarciahc.cityhealth@quezoncity.gov.ph">ermingarciahc.cityhealth@quezoncity.gov.ph</a> | Dr. Obermay S. Carabeo</li>
+
+            <li>Escopa Sentrong Sigla Health Center - <a href="mailto:escopahc.cityhealth@quezoncity.gov.ph">P. Burgos Street, Brgy. Escopa, Project 4</a><br>
+            7943 1484 | <a href="mailto:escopahc.cityhealth@quezoncity.gov.ph">escopahc.cityhealth@quezoncity.gov.ph</a> | Dr. Paul Bryan M. Sumague</li>
+
+            <li>Libis Health Center - <a href="mailto:libishc.cityhealth@quezoncity.gov.ph">E. Rodriguez Jr. Avenue cor. L. Pasco Street, Brgy. Libis</a><br>
+            8552 3022 | <a href="mailto:libishc.cityhealth@quezoncity.gov.ph">libishc.cityhealth@quezoncity.gov.ph</a> | Dr. Vincent-Lou R. Mendoza</li>
+
+            <li>Murphy Super Health Center - <a href="mailto:murphyshc.cityhealth@quezoncity.gov.ph">35 18th Avenue, Brgy. San Roque</a><br>
+            7529 2027 | <a href="mailto:murphyshc.cityhealth@quezoncity.gov.ph">murphyshc.cityhealth@quezoncity.gov.ph</a> | Dr. Thon Justin G. Filart</li>
+
+            <li>Old Balara Health Center - <a href="mailto:oldbalarahc.cityhealth@quezoncity.gov.ph">19 Doña Filomena St., Villa Beatriz, Brgy. Old Balara</a><br>
+            8442 9251 | <a href="mailto:oldbalarahc.cityhealth@quezoncity.gov.ph">oldbalarahc.cityhealth@quezoncity.gov.ph</a> | Dr. David Nolan L. Cachola</li>
+
+            <li>Pansol Health Center - <a href="mailto:pansolhc.cityhealth@quezoncity.gov.ph">Plaza St., Brgy. Pansol</a><br>
+            7003 8537 | <a href="mailto:pansolhc.cityhealth@quezoncity.gov.ph">pansolhc.cityhealth@quezoncity.gov.ph</a> | Dr. Charissa L. Alisuag</li>
+
+            <li>Project 4 Health Center - <a href="mailto:project4hc.cityhealth@quezoncity.gov.ph">Kalantiaw St. cor. P. Tuazon, Brgy. Bagumbuhay</a><br>
+            7149 0023 | <a href="mailto:project4hc.cityhealth@quezoncity.gov.ph">project4hc.cityhealth@quezoncity.gov.ph</a> | Dr. Marilin R. Santos</li>
+
+            <li>Quirino Memorial Medical Center - <a href="#">J.P. Rizal, Project 4, Lungsod Quezon</a><br>
+            (02) 5304 9800</li>
+
+            <li>Socorro Health Center - <a href="mailto:socorrohc.cityhealth@quezoncity.gov.ph">139 15th Avenue, Brgy. Socorro</a><br>
+            (02) 7117 7234 | <a href="mailto:socorrohc.cityhealth@quezoncity.gov.ph">socorrohc.cityhealth@quezoncity.gov.ph</a> | Dr. Cooper Nikko C. Chavez</li>
+        </ul>
+
+      </div>
+    </section>
+
+    <section class="vaccination-drives-section">
+      <h3 class="vaccination-drives-heading">Upcoming vaccination drives:</h3>
+      <p class="vaccination-drives-text">
+        None. For updates on upcoming vaccination drives or special immunization campaigns, you can regularly check this website or follow us on our official social media accounts.
+      </p>
+    </section>
+
+    <section class="health-information-section">
+  <div class="health-info-subsection">
+    <h3 class="health-info-heading">Recent Health Alerts: as of April 28, 2025</h3>
+    <p class="health-info-subheading">Barangays: Cubao, E. Rodriguez, Kamuning, etc.</p>
+    <div class="health-info-text">
+      <ul>
+        <li>Air Quality Alert: Areas like Tandang Sora and surrounding communities affected by poor air quality due to fires.</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="health-info-subsection">
+    <h3 class="health-info-heading">Health Statistics</h3>
+    <div class="health-info-text">
+      <ul>
+        <li>Dengue Cases.</li>
+        <li>Pertussis Cases.</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="health-info-subsection">
+    <h3 class="health-info-heading">Health Programs & Initiatives</h3>
+    <div class="health-info-text">
+      <ul>
+        <li>Dengue Prevention Campaign</li>
+        <li>Super Health Centers</li>
+        <li>Mobile Health Clinics</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+    <footer class="footer-section">
+      <div class="footer-background">
+        <div class="footer-content">
+          <div class="footer-left">
+            <h3 class="footer-title">ALAGANG BAYAN:</h3>
+            <p class="footer-subtitle">QUEZON CITY MUNICIPAL HEALTH INFORMATION SYSTEM</p>
+            <div class="social-media-icons">
+              <img src="./imgs/fb_Icon.svg" alt="Facebook" class="social-icon" />
+              <img src="./imgs/linkedin_Icon.svg" alt="LinkedIn" class="social-icon" />
+              <img src="./imgs/yt_Icon.svg" alt="YouTube" class="social-icon" />
+              <img src="./imgs/ig_Icon.svg" alt="Instagram" class="social-icon" />
+            </div>
+          </div>
+          <div class="footer-center">
+            <h4 class="footer-heading">Hotlines:</h4>
+            <p class="footer-phone">+1702921379</p>
+            <p class="footer-phone">+09123456789</p>
+          </div>
+          <div class="footer-right">
+            <h4 class="footer-heading">Email Us:</h4>
+            <p class="footer-email">alagangbayan.qc.ph@gmail.com</p>
+            <p class="footer-email">info@alagangbayan.qc.ph</p>
+            <h4 class="footer-heading">Support:</h4>
+            <ul class="footer-support-list">
+              <li><a href="#" class="footer-support-link">Feedback Form</a></li>
+              <li><a href="#" class="footer-support-link">Chatbot</a></li>
+              <li><a href="#" class="footer-support-link">FAQS</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+        function scrollServices(direction) {
+          const container = document.getElementById('servicesScroll');
+          const scrollAmount = 320; // Width of one card plus gap
+          
+          if (direction === 'left') {
+            container.scrollBy({
+              left: -scrollAmount,
+              behavior: 'smooth'
+            });
+          } else {
+            container.scrollBy({
+              left: scrollAmount,
+              behavior: 'smooth'
+            });
+          }
+        }
+        
+        function toggleDropdown() {
+          const dropdown = document.getElementById('locationDropdown');
+          const button = document.querySelector('.dropdown-button');
+          const isExpanded = button.getAttribute('aria-expanded') === 'true';
+          
+          if (isExpanded) {
+            dropdown.classList.remove('show');
+            button.setAttribute('aria-expanded', 'false');
+          } else {
+            dropdown.classList.add('show');
+            button.setAttribute('aria-expanded', 'true');
+          }
+        }
+        
+        // Close dropdown when clicking outside
+        window.addEventListener('click', function(event) {
+          if (!event.target.matches('.dropdown-button') && 
+              !event.target.matches('.text-wrapper-2') && 
+              !event.target.matches('.ri-arrow-down-s-line')) {
+            const dropdown = document.getElementById('locationDropdown');
+            const button = document.querySelector('.dropdown-button');
+            dropdown.classList.remove('show');
+            button.setAttribute('aria-expanded', 'false');
+          }
+        });
+        
+        // Keyboard navigation
+        document.addEventListener('keydown', function(event) {
+          const dropdown = document.getElementById('locationDropdown');
+          const button = document.querySelector('.dropdown-button');
+          
+          // Close dropdown on Escape key
+          if (event.key === 'Escape' && dropdown.classList.contains('show')) {
+            dropdown.classList.remove('show');
+            button.setAttribute('aria-expanded', 'false');
+            button.focus();
+          }
+        });
+      </script>
+
+  </body>
+</html>

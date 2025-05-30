@@ -1,33 +1,36 @@
-.services-header {
-  display: flex; /* Use flexbox for horizontal alignment */
-  align-items: center; /* Center items vertically */
-  justify-content: space-between; /* Space between elements */
-  padding: 20px; /* Balanced padding around the header */
+.health-services-section {
+  padding: 40px; /* Balanced padding around the section */
 }
 
-.services-title {
-  font-weight: bold; /* Bold heading */
-  color: black; /* Black text color */
-  margin: 0; /* Remove default margin */
+.health-services-title {
+  color: #000; /* Black color for heading */
+  font-family: 'Inter', sans-serif; /* Font family */
+  font-size: 32px; /* Font size for heading */
+  font-weight: 600; /* Semi-bold font weight */
+  line-height: 48px; /* Line height */
+  margin: 0 0 20px 0; /* Margin below the heading */
 }
 
-.services-controls {
-  display: flex; /* Use flexbox for controls */
-  align-items: center; /* Center items vertically */
+.health-services-subheading {
+  color: #000; /* Black color for subheading */
+  font-family: 'Inter', sans-serif; /* Font family */
+  font-size: 24px; /* Font size for subheading */
+  font-weight: 500; /* Medium font weight */
+  line-height: 36px; /* Line height */
+  margin: 0 0 15px 0; /* Margin below the subheading */
 }
 
-.view-all-link {
-  margin-right: 20px; /* Space between "View All" and buttons */
-  color: black; /* Black text color */
-  text-decoration: none; /* Remove underline */
-  font-weight: normal; /* Normal font weight */
+.health-services-details {
+  color: #828282; /* Gray color for details */
+  font-family: 'Inter', sans-serif; /* Font family */
+  font-size: 24px; /* Font size for details */
+  font-weight: 400; /* Normal font weight */
+  line-height: 150%; /* Line height */
 }
 
-.scroll-button {
-  background: none; /* Remove default button background */
-  border: none; /* Remove default button border */
-  cursor: pointer; /* Change cursor to pointer */
-  font-size: 24px; /* Increase font size for arrows */
-  color: black; /* Black color for arrows */
-  margin-left: 10px; /* Space between buttons */
+.health-services-details a {
+  color: #828282; /* Gray color for links */
+  text-decoration: underline; /* Underline styling for links */
+  text-underline-offset: 3px; /* Offset for underline */
+  text-decoration-thickness: 2px; /* Thickness of underline */
 }

@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="globals.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="HEADER">
+      <header class="header">
+        <div class="frame">
+          <div class="LOGO"></div>
+        </div>
+        <div class="div">
+          <div class="TEXT-HOVER">
+            <a href="index.html" class="nav-link">HOME</a>
+          </div>
+          <div class="TEXT-HOVER">
+            <a href="aboutus.html" class="nav-link">ABOUT US</a>
+          </div>
+          <div class="TEXT-HOVER">
+            <a href="services.html" class="nav-link">SERVICES</a>
+          </div>
+          <div class="LOCATION-DROPDOWN">
+            <button class="dropdown-button" aria-haspopup="true" aria-expanded="false" onclick="toggleDropdown()">
+              <span class="text-wrapper-2">LOCATION</span>
+              <img class="ri-arrow-down-s-line" src="./imgs/ri_arrow-down-s-line.png" alt="Dropdown arrow" />
+            </button>
+            <div class="dropdown-menu" id="locationDropdown">
+              <a href="district_1.html" class="dropdown-item">District I</a>
+              <a href="district_2.html" class="dropdown-item">District II</a>
+              <a href="district_3.html" class="dropdown-item">District III</a>
+              <a href="district_4.html" class="dropdown-item">District IV</a>
+              <a href="district_5.html" class="dropdown-item">District V</a>
+              <a href="district_6.html" class="dropdown-item">District VI</a>
+            </div>
+          </div>
+        </div>
+      </header>
+    </div>
+    
+    <section class="district-section">
+      <div class="district-text">
+        <h1 class="district-title">District I</h1>
+        <h2 class="district-subheading">United for a Healthier Community</h2>
+        <p class="district-description">
+          District 1 of Quezon City is a dynamic and densely populated area that includes key barangays such as Project 8 and San Francisco Del Monte.
+          Local health centers and barangay health stations are at the heart of community care, offering vital services like immunizations, maternal and child health programs, disease prevention, and emergency response. Residents rely on these facilities for accessible and reliable healthcare, while healthcare providers work tirelessly to meet the needs of a growing population through dedication, coordination, and compassion. Support from local officials plays a crucial role in maintaining and improving these services—ensuring that facilities are well-equipped, staff are well-trained, and policies are responsive to the real needs of the community. Together, residents, health workers, and the city leaders form a strong foundation for a healthier, more resilient District 1.
+        </p>
+      </div>
+      <img src="./imgs/district_1.jpg" alt="District I Image" class="district-image" />
+    </section>
+
+    <section class="health-services-section">
+      <h2 class="health-services-title">Health Services Information</h2>
+      <h3 class="health-services-subheading">List of centers and hospitals:</h3>
+      <div class="health-services-details">
+        <ul>
+          <li>Bago Bantay Health Center - <a href="mailto:bagobantayhc.cityhealth@quezoncity.gov.ph">84 Sto. Nino St., Brgy. Alicia</a><br>
+          09331422533 | <a href="mailto:bagobantayhc.cityhealth@quezoncity.gov.ph">bagobantayhc.cityhealth@quezoncity.gov.ph</a> | Dr. Stephanie Joshua G. Rivera</li>
+          
+          <li>Bagong Pag-asa Health Center - <a href="mailto:bagongpagasahc.cityhealth@quezoncity.gov.ph">36 Road 9 cor. Road 10, Brgy. Bagong Pag-asa</a><br>
+          09196667054 | <a href="mailto:bagongpagasahc.cityhealth@quezoncity.gov.ph">bagongpagasahc.cityhealth@quezoncity.gov.ph</a> | Dr. Ferdinand C. Cavalida</li>
+          
+          <li>Balingasa Health Center - <a href="mailto:balingasahc.cityhealth@quezoncity.gov.ph">26 J. Aquino Cruz St., Brgy. Balingasa</a><br>
+          09161710747 | <a href="mailto:balingasahc.cityhealth@quezoncity.gov.ph">balingasahc.cityhealth@quezoncity.gov.ph</a> | Dr. Romarie Jane M. Queddeng</li>
+          
+          <li>Loma Health Center - <a href="mailto:lomahc.cityhealth@quezoncity.gov.ph">225 Mariveles St., Brgy. Paang Bundok</a><br>
+          7121 0645 | <a href="mailto:lomahc.cityhealth@quezoncity.gov.ph">lomahc.cityhealth@quezoncity.gov.ph</a> | Dr. Gavina Aurora F. David</li>
+          
+          <li>Lung Center of the Philippines - <a href="https://lcp.gov.ph">Quezon Ave, Diliman, Quezon City</a><br>
+          (02) 8924 6101 | <a href="https://lcp.gov.ph">lcp.gov.ph</a></li>
+          
+          <li>Masambong Health Center - <a href="mailto:masambonghc.cityhealth@quezoncity.gov.ph">8 Malac St., Brgy. Masambong</a><br>
+          09205246039 | <a href="mailto:masambonghc.cityhealth@quezoncity.gov.ph">masambonghc.cityhealth@quezoncity.gov.ph</a> | Dr. Jose Maria F. Fernandez</li>
+          
+          <li>Mercedes de Joya Health Center - <a href="mailto:mdjhc.cityhealth@quezoncity.gov.ph">Dapitan cor. Mayon St., Brgy. Sta Teresita</a><br>
+          09328430155 | <a href="mailto:mdjhc.cityhealth@quezoncity.gov.ph">mdjhc.cityhealth@quezoncity.gov.ph</a> | Dr. Joyce Nicole B. Demoga</li>
+          
+          <li>Paltok Health Center - <a href="mailto:paltokhc.cityhealth@quezoncity.gov.ph">14 Matias St., Brgy. Paltok</a><br>
+          09175443411 | <a href="mailto:paltokhc.cityhealth@quezoncity.gov.ph">paltokhc.cityhealth@quezoncity.gov.ph</a> | Dr. Jan Dominik C. Arceo</li>
+          
+          <li>Project 6 Health Center - <a href="mailto:project6hc.cityhealth@quezoncity.gov.ph">58 Alley 3, Brgy. Project 6</a><br>
+          09178986815 | <a href="mailto:project6hc.cityhealth@quezoncity.gov.ph">project6hc.cityhealth@quezoncity.gov.ph</a> | Dr. Arnold E. Monteiro</li>
+          
+          <li>Project 7 Health Center - <a href="mailto:project7hc.cityhealth@quezoncity.gov.ph">39 Bansalangin St., Brgy. Veterans Village</a><br>
+          09926826490 | <a href="mailto:project7hc.cityhealth@quezoncity.gov.ph">project7hc.cityhealth@quezoncity.gov.ph</a> | Dr. Kheizl Mae R. Bernardo</li>
+          
+          <li>San Antonio Health Center - <a href="mailto:sanantoniohc.cityhealth@quezoncity.gov.ph">38 San Jose, Brgy. San Antonio</a><br>
+          8374 8925 | <a href="mailto:sanantoniohc.cityhealth@quezoncity.gov.ph">sanantoniohc.cityhealth@quezoncity.gov.ph</a></li>
+          
+          <li>San Francisco Super Health Center - <a href="mailto:sfshc@quezoncity.gov.ph">H. Francisco cor. San Vicente St., Brgy. Damayan</a><br>
+          09567099857 | Dr. Mechael Angelo A. Marasigan</li>
+          
+          <li>San Jose Health Center - <a href="mailto:sanjosehc.cityhealth@quezoncity.gov.ph">27 Tinagan St., Brgy. San Jose</a><br>
+          7148 1871 | <a href="mailto:sanjosehc.cityhealth@quezoncity.gov.ph">sanjosehc.cityhealth@quezoncity.gov.ph</a></li>
+          
+          <li>Toro Hills Health Center - <a href="mailto:torohillshc.cityhealth@quezoncity.gov.ph">Road 11 Seminary Road, Brgy. Bahay Toro</a><br>
+          Dr. Clairol M. Astilla, MD III, OIC</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="vaccination-drives-section">
+      <h3 class="vaccination-drives-heading">Upcoming vaccination drives:</h3>
+      <p class="vaccination-drives-text">
+        None. For updates on upcoming vaccination drives or special immunization campaigns, you can regularly check this website or follow us on our official social media accounts.
+      </p>
+    </section>
+
+    <section class="health-information-section">
+  <div class="health-info-subsection">
+    <h3 class="health-info-heading">Recent Health Alerts: as of April 28, 2025</h3>
+    <p class="health-info-subheading">Barangays: Bago Bantay, Bagong Pag-asa, Project 6, etc.</p>
+    <div class="health-info-text">
+      <ul>
+        <li>Air Quality Alert: Areas like Tandang Sora and surrounding communities affected by poor air quality due to fires.</li>
+        <li>Dengue Alert: Reported cases early in 2025 as part of city-wide outbreak.</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="health-info-subsection">
+    <h3 class="health-info-heading">Health Statistics</h3>
+    <div class="health-info-text">
+      <ul>
+        <li>Dengue Cases.</li>
+        <li>Pertussis Cases.</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="health-info-subsection">
+    <h3 class="health-info-heading">Health Programs & Initiatives</h3>
+    <div class="health-info-text">
+      <ul>
+        <li>Health and Wellness Caravans.</li>
+        <li>Legislation Week Wellness Program</li>
+        <li>Super Health Centers.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+    <footer class="footer-section">
+      <div class="footer-background">
+        <div class="footer-content">
+          <div class="footer-left">
+            <h3 class="footer-title">ALAGANG BAYAN:</h3>
+            <p class="footer-subtitle">QUEZON CITY MUNICIPAL HEALTH INFORMATION SYSTEM</p>
+            <div class="social-media-icons">
+              <img src="./imgs/fb_Icon.svg" alt="Facebook" class="social-icon" />
+              <img src="./imgs/linkedin_Icon.svg" alt="LinkedIn" class="social-icon" />
+              <img src="./imgs/yt_Icon.svg" alt="YouTube" class="social-icon" />
+              <img src="./imgs/ig_Icon.svg" alt="Instagram" class="social-icon" />
+            </div>
+          </div>
+          <div class="footer-center">
+            <h4 class="footer-heading">Hotlines:</h4>
+            <p class="footer-phone">+1702921379</p>
+            <p class="footer-phone">+09123456789</p>
+          </div>
+          <div class="footer-right">
+            <h4 class="footer-heading">Email Us:</h4>
+            <p class="footer-email">alagangbayan.qc.ph@gmail.com</p>
+            <p class="footer-email">info@alagangbayan.qc.ph</p>
+            <h4 class="footer-heading">Support:</h4>
+            <ul class="footer-support-list">
+              <li><a href="#" class="footer-support-link">Feedback Form</a></li>
+              <li><a href="#" class="footer-support-link">Chatbot</a></li>
+              <li><a href="#" class="footer-support-link">FAQS</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+        function scrollServices(direction) {
+          const container = document.getElementById('servicesScroll');
+          const scrollAmount = 320; // Width of one card plus gap
+          
+          if (direction === 'left') {
+            container.scrollBy({
+              left: -scrollAmount,
+              behavior: 'smooth'
+            });
+          } else {
+            container.scrollBy({
+              left: scrollAmount,
+              behavior: 'smooth'
+            });
+          }
+        }
+        
+        function toggleDropdown() {
+          const dropdown = document.getElementById('locationDropdown');
+          const button = document.querySelector('.dropdown-button');
+          const isExpanded = button.getAttribute('aria-expanded') === 'true';
+          
+          if (isExpanded) {
+            dropdown.classList.remove('show');
+            button.setAttribute('aria-expanded', 'false');
+          } else {
+            dropdown.classList.add('show');
+            button.setAttribute('aria-expanded', 'true');
+          }
+        }
+        
+        // Close dropdown when clicking outside
+        window.addEventListener('click', function(event) {
+          if (!event.target.matches('.dropdown-button') && 
+              !event.target.matches('.text-wrapper-2') && 
+              !event.target.matches('.ri-arrow-down-s-line')) {
+            const dropdown = document.getElementById('locationDropdown');
+            const button = document.querySelector('.dropdown-button');
+            dropdown.classList.remove('show');
+            button.setAttribute('aria-expanded', 'false');
+          }
+        });
+        
+        // Keyboard navigation
+        document.addEventListener('keydown', function(event) {
+          const dropdown = document.getElementById('locationDropdown');
+          const button = document.querySelector('.dropdown-button');
+          
+          // Close dropdown on Escape key
+          if (event.key === 'Escape' && dropdown.classList.contains('show')) {
+            dropdown.classList.remove('show');
+            button.setAttribute('aria-expanded', 'false');
+            button.focus();
+          }
+        });
+      </script>
+
+  </body>
+</html>

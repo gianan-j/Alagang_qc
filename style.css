@@ -1418,3 +1418,193 @@ body {
   color: black; /* Black color for arrows */
   margin-left: 10px; /* Space between buttons */
 }
+
+.district-section {
+  align-self: stretch;
+  margin-top: 100px; /* Position the section 100 pixels below the header */
+  display: flex; /* Use flexbox for horizontal layout */
+  align-items: center; /* Vertically center the image relative to the text */
+  padding: 20px; /* Balanced padding around the section */
+}
+
+.district-text {
+  flex: 1; /* Allow text to take available space */
+  margin-right: 20px; /* Space between text and image */
+}
+
+.district-title {
+  color: #000; /* Black color for title */
+  font-family: 'Inter', sans-serif; /* Font family */
+  font-size: 64px; /* Font size for title */
+  font-weight: 700; /* Bold font weight */
+  line-height: normal; /* Normal line height */
+  letter-spacing: -1.28px; /* Letter spacing */
+  margin: 0; /* Remove default margin */
+}
+
+.district-subheading {
+  color: #828282; /* Gray color for subheading */
+  font-family: 'Inter', sans-serif; /* Font family */
+  font-size: 24px; /* Font size for subheading */
+  font-weight: 400; /* Normal font weight */
+  line-height: 150%; /* Line height */
+  margin: 10px 0; /* Margin above and below the subheading */
+}
+
+.district-description {
+  color: #000; /* Black color for description */
+  font-family: 'Inter', sans-serif; /* Font family */
+  font-size: 20px; /* Font size for description */
+  font-weight: 500; /* Medium font weight */
+  line-height: 150%; /* Line height */
+  margin: 10px 0; /* Margin above and below the description */
+}
+
+.district-image {
+  width: 508px; /* Fixed width for the image */
+  height: 657px; /* Fixed height for the image */
+  object-fit: cover; /* Maintain aspect ratio without distortion */
+}
+
+.health-services-section {
+  padding: 40px; /* Balanced padding around the section */
+}
+
+.health-services-title {
+  color: #000; /* Black color for heading */
+  font-family: 'Inter', sans-serif; /* Font family */
+  font-size: 32px; /* Font size for heading */
+  font-weight: 600; /* Semi-bold font weight */
+  line-height: 48px; /* Line height */
+  margin: 0 0 20px 0; /* Margin below the heading */
+}
+
+.health-services-subheading {
+  color: #000; /* Black color for subheading */
+  font-family: 'Inter', sans-serif; /* Font family */
+  font-size: 24px; /* Font size for subheading */
+  font-weight: 500; /* Medium font weight */
+  line-height: 36px; /* Line height */
+  margin: 0 0 15px 0; /* Margin below the subheading */
+}
+
+.health-services-details {
+  color: #828282; /* Gray color for details */
+  font-family: 'Inter', sans-serif; /* Font family */
+  font-size: 24px; /* Font size for details */
+  font-weight: 400; /* Normal font weight */
+  line-height: 150%; /* Line height */
+  margin: 0; /* Remove default margin */
+}
+
+.health-services-details ul {
+  list-style-type: disc; /* Bullet points */
+  padding-left: 20px; /* Indent for bullet points */
+  margin: 0; /* Remove default margin */
+}
+
+.health-services-details li {
+  margin-bottom: 8px; /* Space between list items */
+  color: #828282; /* Gray color for list items */
+}
+
+.health-services-details a {
+  color: #828282; /* Gray color for links */
+  text-decoration: underline; /* Underline styling for links */
+  text-underline-offset: 3px; /* Offset for underline */
+  text-decoration-thickness: 2px; /* Thickness of underline */
+}
+
+.health-services-details a:hover {
+  color: #666666; /* Slightly darker gray on hover */
+}
+
+.vaccination-drives-section {
+  padding: 40px; /* Balanced padding around the section */
+}
+
+.vaccination-drives-heading {
+  color: #000; /* Black color for heading */
+  font-family: 'Inter', sans-serif; /* Font family */
+  font-size: 24px; /* Font size for heading */
+  font-weight: 600; /* Semi-bold font weight */
+  line-height: 150%; /* Line height */
+  margin: 0 0 15px 0; /* Margin below the heading */
+}
+
+.vaccination-drives-text {
+  color: #828282; /* Gray color for text */
+  font-family: 'Inter', sans-serif; /* Font family */
+  font-size: 24px; /* Font size for text */
+  font-weight: 400; /* Normal font weight */
+  line-height: 150%; /* Line height */
+  margin: 0; /* Remove default margin */
+}
+
+.vaccination-drives-text a {
+  color: #828282; /* Gray color for links */
+  text-decoration: underline; /* Underline styling for links */
+  text-underline-offset: 3px; /* Offset for underline */
+  text-decoration-thickness: 2px; /* Thickness of underline */
+}
+
+.vaccination-drives-text a:hover {
+  color: #666666; /* Slightly darker gray on hover */
+}
+
+.health-information-section {
+  padding: 40px; /* Balanced padding around the section */
+}
+
+.health-info-heading {
+  color: #000; /* Black color for heading */
+  font-family: 'Inter', sans-serif; /* Font family */
+  font-size: 24px; /* Font size for heading */
+  font-weight: 600; /* Semi-bold font weight */
+  line-height: 150%; /* Line height */
+  margin: 0 0 15px 0; /* Margin below the heading */
+}
+
+.health-info-subheading {
+  color: #828282; /* Gray color for subheading */
+  font-family: 'Inter', sans-serif; /* Font family */
+  font-size: 24px; /* Font size for subheading */
+  font-weight: 400; /* Normal font weight */
+  line-height: 150%; /* Line height */
+  margin: 0 0 10px 0; /* Margin below the subheading */
+}
+
+.health-info-text {
+  color: #828282; /* Gray color for text */
+  font-family: 'Inter', sans-serif; /* Font family */
+  font-size: 24px; /* Font size for text */
+  font-weight: 400; /* Normal font weight */
+  line-height: 150%; /* Line height */
+  margin: 0 0 20px 0; /* Margin below text blocks */
+}
+
+.health-info-text ul {
+  list-style-type: disc; /* Bullet points */
+  padding-left: 20px; /* Indent for bullet points */
+  margin: 0 0 20px 0; /* Margin below lists */
+}
+
+.health-info-text li {
+  margin-bottom: 8px; /* Space between list items */
+  color: #828282; /* Gray color for list items */
+}
+
+.health-info-text a {
+  color: #828282; /* Gray color for links */
+  text-decoration: underline; /* Underline styling for links */
+  text-underline-offset: 3px; /* Offset for underline */
+  text-decoration-thickness: 2px; /* Thickness of underline */
+}
+
+.health-info-text a:hover {
+  color: #666666; /* Slightly darker gray on hover */
+}
+
+.health-info-subsection {
+  margin-bottom: 30px; /* Space between subsections */
+}
