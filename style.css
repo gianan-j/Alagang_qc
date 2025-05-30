@@ -607,6 +607,10 @@ body {
   font-family: 'Arial', sans-serif; /* Clean, sans-serif font */
 }
 
+.services-title{
+  font-size: larger;
+}
+
 .services-section h2 {
   font-weight: bold; /* Bold heading */
   color: black; /* Black text color */
@@ -1379,4 +1383,38 @@ body {
 /* Style for the dropdown options */
 .dropdown-select option {
   padding: 10px; /* Padding for options */
+}
+
+.services-header {
+  display: flex; /* Use flexbox for horizontal alignment */
+  align-items: center; /* Center items vertically */
+  justify-content: space-between; /* Space between elements */
+  padding: 20px; /* Balanced padding around the header */
+}
+
+.services-title {
+  font-weight: bold; /* Bold heading */
+  color: black; /* Black text color */
+  margin: 0; /* Remove default margin */
+}
+
+.services-controls {
+  display: flex; /* Use flexbox for controls */
+  align-items: center; /* Center items vertically */
+}
+
+.view-all-link {
+  margin-right: 20px; /* Space between "View All" and buttons */
+  color: black; /* Black text color */
+  text-decoration: none; /* Remove underline */
+  font-weight: bold; /* Normal font weight */
+}
+
+.scroll-button {
+  background: none; /* Remove default button background */
+  border: none; /* Remove default button border */
+  cursor: pointer; /* Change cursor to pointer */
+  font-size: 24px; /* Increase font size for arrows */
+  color: black; /* Black color for arrows */
+  margin-left: 10px; /* Space between buttons */
 }
