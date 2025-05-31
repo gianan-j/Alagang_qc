@@ -1608,3 +1608,6 @@ body {
 .health-info-subsection {
   margin-bottom: 30px; /* Space between subsections */
 }
+
+/* Import appointment page styles */
+@import url('appointment-styles.css');
