@@ -1611,3 +1611,87 @@ body {
 
 /* Import appointment page styles */
 @import url('appointment-styles.css');
+
+/* Call-to-Action Section - Updated to match site color scheme */
+.cta-section {
+  padding: 80px 20px;
+  background-color: #F2EDE5; /* Match your existing background color */
+  text-align: center;
+  color: #000000; /* Black text to match your site */
+}
+
+.cta-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.cta-title {
+  font-family: "Inter-Bold", Helvetica; /* Match your existing font family */
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 16px;
+  letter-spacing: -0.5px;
+  color: #000000; /* Black text */
+}
+
+.cta-subtitle {
+  font-family: "Inter-Regular", Helvetica; /* Match your existing font family */
+  font-size: 18px;
+  margin-bottom: 32px;
+  color: #666666; /* Gray text to match your existing subtitle colors */
+  line-height: 1.6;
+}
+
+.cta-buttons {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.cta-primary-button {
+  background-color: #A52A2A; /* Match your header button color */
+  color: #ffffff;
+  font-family: "Inter-SemiBold", Helvetica; /* Match your existing button font */
+  font-weight: 600;
+  font-size: 16px;
+  padding: 16px 32px;
+  border: none;
+  border-radius: 20px; /* Match your existing button border radius */
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.cta-primary-button:hover {
+  background-color: #8B1A1A; /* Match your existing hover color */
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(165, 42, 42, 0.3);
+}
+
+.cta-secondary-button {
+  background: transparent;
+  color: #A52A2A; /* Match your primary color */
+  font-family: "Inter-SemiBold", Helvetica; /* Match your existing button font */
+  font-weight: 600;
+  font-size: 16px;
+  padding: 14px 30px; /* Slightly smaller to account for border */
+  border: 2px solid #A52A2A; /* Match your primary color */
+  border-radius: 20px; /* Match your existing button border radius */
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.cta-secondary-button:hover {
+  background-color: #A52A2A;
+  color: #ffffff;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(165, 42, 42, 0.3);
+}
+
+/* ... existing code ... */

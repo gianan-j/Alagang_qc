@@ -13,6 +13,8 @@
       <header class="header">
         <div class="frame">
           <div class="LOGO"></div>
+          <a href="register.html" class="header-appointment-button">REGISTER</a>
+          <a href="login.html" class="header-appointment-button">LOG IN</a>
         </div>
         <div class="div">
           <div class="TEXT-HOVER">
@@ -42,10 +44,12 @@
       </header>
     </div>
 
-    <section class="appointment-section">
-      <div class="appointment-container">
-        <h2 class="appointment-title">Book an Appointment</h2>
-        <p class="appointment-subtitle">Schedule your visit with our healthcare professionals</p>
+    <div class="login-style-container">
+      <div class="appointment-card">
+        <div class="appointment-header">
+          <h2 class="appointment-title">Book an Appointment</h2>
+          <p class="appointment-subtitle">Schedule your visit with our healthcare professionals</p>
+        </div>
         
         <form class="appointment-form" id="appointmentForm" onsubmit="handleAppointmentSubmit(event)">
           <div class="form-group">
@@ -84,30 +88,47 @@
             />
           </div>
 
-          <div class="form-group">
-            <label for="appointmentDate" class="form-label">Preferred Date</label>
-            <input 
-              type="date" 
-              id="appointmentDate" 
-              name="appointmentDate" 
-              class="form-input date-input" 
-              required 
-              min=""
-            />
+          <div class="form-row">
+            <div class="form-group form-half">
+              <label for="appointmentDate" class="form-label">Preferred Date</label>
+              <input 
+                type="date" 
+                id="appointmentDate" 
+                name="appointmentDate" 
+                class="form-input date-input" 
+                required 
+                min=""
+              />
+            </div>
+
+            <div class="form-group form-half">
+              <label for="appointmentTime" class="form-label">Preferred Time</label>
+              <select id="appointmentTime" name="appointmentTime" class="form-input" required>
+                <option value="">Select time</option>
+                <option value="08:00">8:00 AM</option>
+                <option value="09:00">9:00 AM</option>
+                <option value="10:00">10:00 AM</option>
+                <option value="11:00">11:00 AM</option>
+                <option value="13:00">1:00 PM</option>
+                <option value="14:00">2:00 PM</option>
+                <option value="15:00">3:00 PM</option>
+                <option value="16:00">4:00 PM</option>
+              </select>
+            </div>
           </div>
 
           <div class="form-group">
-            <label for="appointmentTime" class="form-label">Preferred Time</label>
-            <select id="appointmentTime" name="appointmentTime" class="form-input" required>
-              <option value="">Select a time slot</option>
-              <option value="08:00">8:00 AM</option>
-              <option value="09:00">9:00 AM</option>
-              <option value="10:00">10:00 AM</option>
-              <option value="11:00">11:00 AM</option>
-              <option value="13:00">1:00 PM</option>
-              <option value="14:00">2:00 PM</option>
-              <option value="15:00">3:00 PM</option>
-              <option value="16:00">4:00 PM</option>
+            <label for="medicalCenter" class="form-label">Medical Center Branch</label>
+            <select id="medicalCenter" name="medicalCenter" class="form-input" required>
+              <option value="">Select a medical center</option>
+              <option value="district-1-center">District I Health Center</option>
+              <option value="district-2-center">District II Health Center</option>
+              <option value="district-3-center">District III Health Center</option>
+              <option value="district-4-center">District IV Health Center</option>
+              <option value="district-5-center">District V Health Center</option>
+              <option value="district-6-center">District VI Health Center</option>
+              <option value="main-hospital">Quezon City General Hospital</option>
+              <option value="specialty-clinic">Specialty Clinic</option>
             </select>
           </div>
 
@@ -119,6 +140,8 @@
               <option value="consultation">General Consultation</option>
               <option value="checkup">Health Checkup</option>
               <option value="chat-consultation">Chat-based Consultation</option>
+              <option value="emergency">Emergency Care</option>
+              <option value="specialist">Specialist Consultation</option>
             </select>
           </div>
 
@@ -128,17 +151,23 @@
               id="notes" 
               name="notes" 
               class="form-input form-textarea" 
-              rows="4" 
+              rows="3" 
               placeholder="Any additional information or special requests"
             ></textarea>
           </div>
 
-          <button type="submit" class="submit-button">
-            Book Appointment
+          <button type="submit" class="login-style-button">
+            Book an Appointment
           </button>
         </form>
+
+        <div class="form-footer">
+          <p class="form-footer-text">
+            Need help? <a href="#" class="form-link">Contact Support</a>
+          </p>
+        </div>
       </div>
-    </section>
+    </div>
 
     <footer class="footer-section">
       <div class="footer-background">
@@ -185,7 +214,7 @@
         const dropdown = document.getElementById('locationDropdown');
         const button = document.querySelector('.dropdown-button');
         const isExpanded = button.getAttribute('aria-expanded') === 'true';
-        
+
         if (isExpanded) {
           dropdown.classList.remove('show');
           button.setAttribute('aria-expanded', 'false');
@@ -194,7 +223,7 @@
           button.setAttribute('aria-expanded', 'true');
         }
       }
-      
+
       // Close dropdown when clicking outside
       window.addEventListener('click', function(event) {
         if (!event.target.matches('.dropdown-button') && 
@@ -206,12 +235,12 @@
           button.setAttribute('aria-expanded', 'false');
         }
       });
-      
+
       // Keyboard navigation
       document.addEventListener('keydown', function(event) {
         const dropdown = document.getElementById('locationDropdown');
         const button = document.querySelector('.dropdown-button');
-        
+
         // Close dropdown on Escape key
         if (event.key === 'Escape' && dropdown.classList.contains('show')) {
           dropdown.classList.remove('show');
@@ -222,27 +251,31 @@
 
       function handleAppointmentSubmit(event) {
         event.preventDefault();
-        
+
         // Get form data
         const formData = new FormData(event.target);
         const appointmentData = {
           fullName: formData.get('fullName'),
           email: formData.get('email'),
           phone: formData.get('phone'),
+          medicalCenter: formData.get('medicalCenter'),
           date: formData.get('appointmentDate'),
           time: formData.get('appointmentTime'),
           serviceType: formData.get('serviceType'),
           notes: formData.get('notes')
         };
-        
+
         // Here you would typically send the data to your backend
         console.log('Appointment Data:', appointmentData);
-        
-        // Show success message (you can customize this)
+
+        // Show success message
         alert('Appointment request submitted successfully! We will contact you shortly to confirm your appointment.');
-        
+
         // Reset form
         event.target.reset();
+
+        // Redirect to confirmation page (create this page if needed)
+        // window.location.href = 'appointment-confirmation.html';
       }
     </script>
 

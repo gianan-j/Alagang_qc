@@ -158,3 +158,235 @@
   transform: none;
   box-shadow: none;
 }
+
+/* Login-style Appointment Page Styles */
+.login-style-container {
+  min-height: calc(100vh - 200px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 20px;
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+}
+
+.appointment-card {
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+  padding: 40px;
+  max-width: 500px;
+  width: 100%;
+  border: 1px solid #e9ecef;
+}
+
+.appointment-header {
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.appointment-title {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 8px;
+  color: #2c3e50;
+  letter-spacing: -0.5px;
+}
+
+.appointment-subtitle {
+  color: #6c757d;
+  font-size: 15px;
+  margin: 0;
+  line-height: 1.4;
+}
+
+.appointment-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-row {
+  display: flex;
+  gap: 16px;
+}
+
+.form-half {
+  flex: 1;
+}
+
+.form-label {
+  font-weight: 600;
+  margin-bottom: 6px;
+  color: #2c3e50;
+  font-size: 14px;
+  letter-spacing: 0.3px;
+}
+
+.form-input {
+  padding: 14px 16px;
+  border: 2px solid #e9ecef;
+  border-radius: 10px;
+  font-size: 15px;
+  transition: all 0.3s ease;
+  background-color: #fafbfc;
+  font-family: inherit;
+  color: #2c3e50;
+}
+
+.form-input:focus {
+  outline: none;
+  border-color: #007bff;
+  background-color: white;
+  box-shadow: 0 0 0 4px rgba(0, 123, 255, 0.1);
+  transform: translateY(-1px);
+}
+
+.form-input:hover:not(:focus) {
+  border-color: #ced4da;
+  background-color: white;
+}
+
+.form-input::placeholder {
+  color: #adb5bd;
+  font-size: 14px;
+}
+
+.date-input {
+  cursor: pointer;
+}
+
+.form-textarea {
+  resize: vertical;
+  min-height: 80px;
+  font-family: inherit;
+}
+
+.login-style-button {
+  background: linear-gradient(135deg, #007bff, #0056b3);
+  color: white;
+  border: none;
+  padding: 16px 32px;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 8px;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+
+.login-style-button:hover {
+  background: linear-gradient(135deg, #0056b3, #004085);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(0, 123, 255, 0.3);
+}
+
+.login-style-button:active {
+  transform: translateY(0);
+}
+
+.form-footer {
+  text-align: center;
+  margin-top: 24px;
+  padding-top: 20px;
+  border-top: 1px solid #e9ecef;
+}
+
+.form-footer-text {
+  color: #6c757d;
+  font-size: 14px;
+  margin: 0;
+}
+
+.form-link {
+  color: #007bff;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.form-link:hover {
+  color: #0056b3;
+  text-decoration: underline;
+}
+
+/* Form validation styles */
+.form-input:invalid:not(:placeholder-shown) {
+  border-color: #dc3545;
+  background-color: #fff5f5;
+}
+
+.form-input:valid:not(:placeholder-shown) {
+  border-color: #28a745;
+  background-color: #f8fff8;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .login-style-container {
+    padding: 20px 16px;
+  }
+  
+  .appointment-card {
+    padding: 30px 24px;
+    margin: 0 8px;
+  }
+  
+  .appointment-title {
+    font-size: 24px;
+  }
+  
+  .form-row {
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .form-input {
+    font-size: 16px; /* Prevents zoom on iOS */
+  }
+}
+
+@media (max-width: 480px) {
+  .appointment-card {
+    padding: 24px 20px;
+  }
+  
+  .appointment-title {
+    font-size: 22px;
+  }
+  
+  .login-style-button {
+    padding: 14px 28px;
+    font-size: 15px;
+  }
+}
+
+/* Loading state for submit button */
+.login-style-button:disabled {
+  background: #6c757d;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.login-style-button:disabled:hover {
+  background: #6c757d;
+  transform: none;
+  box-shadow: none;
+}
+
+/* Enhanced focus styles for accessibility */
+.form-input:focus-visible {
+  outline: 2px solid #007bff;
+  outline-offset: 2px;
+}
+
+.login-style-button:focus-visible {
+  outline: 2px solid #007bff;
+  outline-offset: 2px;
+}

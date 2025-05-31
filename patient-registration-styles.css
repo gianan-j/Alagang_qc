@@ -1,0 +1,523 @@
+/* Patient Registration Page Styles - Updated to match site color scheme */
+.registration-container {
+  min-height: calc(100vh - 200px);
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 40px 20px;
+  background-color: #F2EDE5; /* Match your site's beige background */
+}
+
+.registration-card {
+  background: white;
+  border-radius: 20px; /* Match your existing button border radius */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Softer shadow to match site style */
+  padding: 40px;
+  max-width: 800px;
+  width: 100%;
+  border: 1px solid #e9ecef;
+  margin: 20px 0;
+}
+
+.registration-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.registration-title {
+  font-family: "Inter-Bold", Helvetica; /* Match your site's font family */
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 8px;
+  color: #000000; /* Black text to match your site */
+  letter-spacing: -0.5px;
+}
+
+.registration-subtitle {
+  font-family: "Inter-Regular", Helvetica; /* Match your site's font family */
+  color: #666666; /* Gray text to match your existing subtitle colors */
+  font-size: 16px;
+  margin: 0;
+  line-height: 1.4;
+}
+
+.registration-form {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.form-section {
+  border-bottom: 1px solid #e9ecef;
+  padding-bottom: 32px;
+}
+
+.form-section:last-of-type {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.section-title {
+  font-family: "Inter-SemiBold", Helvetica; /* Match your site's font family */
+  font-size: 20px;
+  font-weight: 600;
+  color: #000000; /* Black text to match your site */
+  margin-bottom: 20px;
+  padding-bottom: 8px;
+  border-bottom: 2px solid #A52A2A; /* Match your site's primary color */
+  display: inline-block;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.form-row {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 20px;
+}
+
+.form-half {
+  flex: 1;
+}
+
+.form-third {
+  flex: 1;
+}
+
+.form-label {
+  font-family: "Inter-SemiBold", Helvetica; /* Match your site's font family */
+  font-weight: 600;
+  margin-bottom: 6px;
+  color: #000000; /* Black text to match your site */
+  font-size: 14px;
+  letter-spacing: 0.3px;
+}
+
+.form-input {
+  font-family: "Inter-Regular", Helvetica; /* Match your site's font family */
+  padding: 14px 16px;
+  border: 2px solid #e9ecef;
+  border-radius: 10px;
+  font-size: 15px;
+  transition: all 0.3s ease;
+  background-color: #fafbfc;
+  color: #000000; /* Black text to match your site */
+}
+
+.form-input:focus {
+  outline: none;
+  border-color: #A52A2A; /* Match your site's primary color */
+  background-color: white;
+  box-shadow: 0 0 0 4px rgba(165, 42, 42, 0.1); /* Match your site's primary color */
+  transform: translateY(-1px);
+}
+
+.form-input:hover:not(:focus) {
+  border-color: #ced4da;
+  background-color: white;
+}
+
+.form-input::placeholder {
+  color: #adb5bd;
+  font-size: 14px;
+}
+
+.form-textarea {
+  resize: vertical;
+  min-height: 80px;
+  font-family: "Inter-Regular", Helvetica; /* Match your site's font family */
+  line-height: 1.5;
+}
+
+/* Checkbox and Radio Styles */
+.checkbox-group, .radio-group {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 8px;
+}
+
+.checkbox-item, .radio-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.checkbox-item input[type="checkbox"],
+.radio-item input[type="radio"] {
+  width: 18px;
+  height: 18px;
+  accent-color: #A52A2A; /* Match your site's primary color */
+  cursor: pointer;
+}
+
+.checkbox-label, .radio-label {
+  font-family: "Inter-Regular", Helvetica; /* Match your site's font family */
+  font-size: 14px;
+  color: #000000; /* Black text to match your site */
+  cursor: pointer;
+  line-height: 1.4;
+}
+
+.consent-group {
+  background-color: #f8f9fa;
+  padding: 20px;
+  border-radius: 10px;
+  border: 1px solid #e9ecef;
+}
+
+.consent-group .checkbox-item {
+  margin-bottom: 16px;
+}
+
+.consent-group .checkbox-item:last-child {
+  margin-bottom: 0;
+}
+
+.registration-submit-button {
+  font-family: "Inter-SemiBold", Helvetica; /* Match your site's font family */
+  background-color: #A52A2A; /* Match your site's primary color */
+  color: white;
+  border: none;
+  padding: 18px 40px;
+  border-radius: 20px; /* Match your existing button border radius */
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 20px;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+
+.registration-submit-button:hover {
+  background-color: #8B1A1A; /* Match your site's hover color */
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(165, 42, 42, 0.3); /* Match your site's primary color */
+}
+
+.registration-submit-button:active {
+  transform: translateY(0);
+}
+
+.form-footer {
+  text-align: center;
+  margin-top: 24px;
+  padding-top: 20px;
+  border-top: 1px solid #e9ecef;
+}
+
+.form-footer-text {
+  font-family: "Inter-Regular", Helvetica; /* Match your site's font family */
+  color: #666666; /* Gray text to match your existing subtitle colors */
+  font-size: 14px;
+  margin: 0;
+}
+
+.form-link {
+  color: #A52A2A; /* Match your site's primary color */
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.form-link:hover {
+  color: #8B1A1A; /* Match your site's hover color */
+  text-decoration: underline;
+}
+
+/* Form validation styles */
+.form-input:invalid:not(:placeholder-shown) {
+  border-color: #dc3545;
+  background-color: #fff5f5;
+}
+
+.form-input:valid:not(:placeholder-shown) {
+  border-color: #28a745;
+  background-color: #f8fff8;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .registration-container {
+    padding: 20px 16px;
+  }
+  
+  .registration-card {
+    padding: 30px 24px;
+    margin: 0 8px;
+  }
+  
+  .registration-title {
+    font-size: 28px;
+  }
+  
+  .form-row {
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .checkbox-group {
+    gap: 16px;
+  }
+  
+  .form-input {
+    font-size: 16px; /* Prevents zoom on iOS */
+  }
+}
+
+@media (max-width: 480px) {
+  .registration-card {
+    padding: 24px 20px;
+  }
+  
+  .registration-title {
+    font-size: 24px;
+  }
+  
+  .section-title {
+    font-size: 18px;
+  }
+  
+  .registration-submit-button {
+    padding: 16px 32px;
+    font-size: 16px;
+  }
+}
+
+/* Accessibility improvements */
+.form-input:focus-visible {
+  outline: 2px solid #A52A2A; /* Match your site's primary color */
+  outline-offset: 2px;
+}
+
+.checkbox-item input[type="checkbox"]:focus-visible,
+.radio-item input[type="radio"]:focus-visible {
+  outline: 2px solid #A52A2A; /* Match your site's primary color */
+  outline-offset: 2px;
+}
+
+/* Loading state for submit button */
+.registration-submit-button:disabled {
+  background: #6c757d;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.registration-submit-button:disabled:hover {
+  background: #6c757d;
+  transform: none;
+  box-shadow: none;
+}
+
+/* Error message styles */
+.error-message {
+  color: #dc3545;
+  font-size: 12px;
+  margin-top: 4px;
+  display: none;
+}
+
+.form-group.error .error-message {
+  display: block;
+}
+
+.form-group.error .form-input {
+  border-color: #dc3545;
+  background-color: #fff5f5;
+}
+
+/* Success message styles */
+.success-message {
+  background-color: #d4edda;
+  color: #155724;
+  padding: 12px 16px;
+  border-radius: 8px;
+  border: 1px solid #c3e6cb;
+  margin-bottom: 20px;
+  display: none;
+}
+
+.success-message.show {
+  display: block;
+}
+
+/* Form progress indicator */
+.form-progress {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+  padding: 0 20px;
+}
+
+.progress-step {
+  flex: 1;
+  text-align: center;
+  position: relative;
+}
+
+.progress-step::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background-color: #e9ecef;
+  z-index: 1;
+}
+
+.progress-step:first-child::before {
+  left: 50%;
+}
+
+.progress-step:last-child::before {
+  right: 50%;
+}
+
+.progress-step.active::before {
+  background-color: #A52A2A; /* Match your site's primary color */
+}
+
+.progress-step-circle {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #e9ecef;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 8px;
+  position: relative;
+  z-index: 2;
+  font-size: 12px;
+  font-weight: 600;
+  color: #6c757d;
+}
+
+.progress-step.active .progress-step-circle {
+  background-color: #A52A2A; /* Match your site's primary color */
+  color: white;
+}
+
+.progress-step.completed .progress-step-circle {
+  background-color: #28a745;
+  color: white;
+}
+
+.progress-step-label {
+  font-size: 12px;
+  color: #6c757d;
+  font-weight: 500;
+}
+
+.progress-step.active .progress-step-label {
+  color: #A52A2A; /* Match your site's primary color */
+  font-weight: 600;
+}
+
+/* Tooltip styles for help text */
+.form-tooltip {
+  position: relative;
+  display: inline-block;
+  margin-left: 4px;
+}
+
+.form-tooltip .tooltip-icon {
+  width: 16px;
+  height: 16px;
+  background-color: #6c757d;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 10px;
+  cursor: help;
+}
+
+.form-tooltip .tooltip-text {
+  visibility: hidden;
+  width: 200px;
+  background-color: #2c3e50;
+  color: white;
+  text-align: center;
+  border-radius: 6px;
+  padding: 8px;
+  position: absolute;
+  z-index: 1000;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -100px;
+  font-size: 12px;
+  line-height: 1.4;
+}
+
+.form-tooltip .tooltip-text::after {
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #2c3e50 transparent transparent transparent;
+}
+
+.form-tooltip:hover .tooltip-text {
+  visibility: visible;
+}
+
+/* Print styles */
+@media print {
+  .registration-container {
+    background: white;
+    padding: 0;
+  }
+  
+  .registration-card {
+    box-shadow: none;
+    border: 1px solid #000;
+  }
+  
+  .registration-submit-button,
+  .form-footer {
+    display: none;
+  }
+  
+  .form-input {
+    border: 1px solid #000;
+    background: white;
+  }
+}
+
+/* High contrast mode support */
+@media (prefers-contrast: high) {
+  .form-input {
+    border-width: 3px;
+  }
+  
+  .form-input:focus {
+    border-width: 4px;
+  }
+  
+  .registration-submit-button {
+    border: 2px solid #000;
+  }
+}
+
+/* Reduced motion support */
+@media (prefers-reduced-motion: reduce) {
+  .form-input,
+  .registration-submit-button {
+    transition: none;
+  }
+  
+  .registration-submit-button:hover {
+    transform: none;
+  }
+}
