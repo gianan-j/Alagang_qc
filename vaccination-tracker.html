@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="globals.css" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Vaccination Tracker - Alagang Bayan</title>
+  </head>
+  <body class="vaccination-tracker-body">
+    <div class="HEADER">
+      <header class="header">
+        <div class="frame">
+          <div class="LOGO"></div>
+          <a href="patient-registration.html" class="header-appointment-button">PATIENT REGISTRATION</a>
+          <a href="login.html" class="header-appointment-button">LOG IN</a>
+        </div>
+        <div class="div">
+          <div class="TEXT-HOVER">
+            <a href="index.html" class="nav-link">HOME</a>
+          </div>
+          <div class="TEXT-HOVER">
+            <a href="aboutus.html" class="nav-link">ABOUT US</a>
+          </div>
+          <div class="TEXT-HOVER">
+            <a href="services.html" class="nav-link">SERVICES</a>
+          </div>
+          <div class="LOCATION-DROPDOWN">
+            <button class="dropdown-button" aria-haspopup="true" aria-expanded="false" onclick="toggleDropdown()">
+              <span class="text-wrapper-2">LOCATION</span>
+              <img class="ri-arrow-down-s-line" src="./imgs/ri_arrow-down-s-line.png" alt="Dropdown arrow" />
+            </button>
+            <div class="dropdown-menu" id="locationDropdown">
+              <a href="district_1.html" class="dropdown-item">District I</a>
+              <a href="district_2.html" class="dropdown-item">District II</a>
+              <a href="district_3.html" class="dropdown-item">District III</a>
+              <a href="district_4.html" class="dropdown-item">District IV</a>
+              <a href="district_5.html" class="dropdown-item">District V</a>
+              <a href="district_6.html" class="dropdown-item">District VI</a>
+            </div>
+          </div>
+        </div>
+      </header>
+    </div>
+
+    <header class="vaccination-tracker-header">
+      <h1>Vaccination Tracker</h1>
+      <p>Track your vaccination history and stay up-to-date with your immunizations</p>
+    </header>
+
+    <main class="vaccination-main-content">
+      <section class="vaccine-info">
+        <h2>Vaccination Information</h2>
+        <p>Stay protected by keeping track of your vaccinations. Regular immunizations help prevent serious diseases and protect both you and your community.</p>
+        
+        <div class="vaccination-cards">
+          <div class="vaccination-card">
+            <h3>COVID-19 Vaccine</h3>
+            <p>Protects against COVID-19 and its variants. Booster shots recommended annually.</p>
+            <span class="vaccination-status completed">Completed</span>
+          </div>
+          
+          <div class="vaccination-card">
+            <h3>Influenza (Flu) Vaccine</h3>
+            <p>Annual vaccination recommended to protect against seasonal flu strains.</p>
+            <span class="vaccination-status pending">Due Soon</span>
+          </div>
+          
+          <div class="vaccination-card">
+            <h3>Hepatitis B Vaccine</h3>
+            <p>Three-dose series that provides long-term protection against Hepatitis B.</p>
+            <span class="vaccination-status completed">Completed</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="vaccine-history">
+        <h2 class="vaccination-tracker-h2">Your Vaccination History</h2>
+        <p>Below is a complete record of your vaccinations. Keep this information updated and consult with your healthcare provider about any missing immunizations.</p>
+        
+        <table class="vaccination-table">
+          <thead>
+            <tr>
+              <th>Vaccine Name</th>
+              <th>Date Administered</th>
+              <th>Healthcare Provider</th>
+              <th>Next Due Date</th>
+              <th>Status</th>
+              <th>Action</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>COVID-19 (Pfizer)</td>
+              <td>March 15, 2024</td>
+              <td>Quezon City Health Center</td>
+              <td>March 15, 2025</td>
+              <td><span class="vaccination-status completed">Completed</span></td>
+              <td><button class="vaccination-action-button">View Certificate</button></td>
+            </tr>
+            <tr>
+              <td>Influenza 2024</td>
+              <td>October 10, 2023</td>
+              <td>District II Health Center</td>
+              <td>October 10, 2024</td>
+              <td><span class="vaccination-status overdue">Overdue</span></td>
+              <td><button class="vaccination-action-button">Schedule Now</button></td>
+            </tr>
+            <tr>
+              <td>Hepatitis B (Series 3/3)</td>
+              <td>January 20, 2023</td>
+              <td>Quezon City General Hospital</td>
+              <td>Lifetime Protection</td>
+              <td><span class="vaccination-status completed">Completed</span></td>
+              <td><button class="vaccination-action-button">View Record</button></td>
+            </tr>
+            <tr>
+              <td>Tetanus Booster</td>
+              <td>June 5, 2022</td>
+              <td>District IV Health Center</td>
+              <td>June 5, 2032</td>
+              <td><span class="vaccination-status completed">Completed</span></td>
+              <td><button class="vaccination-action-button">View Record</button></td>
+            </tr>
+            <tr>
+              <td>MMR (Measles, Mumps, Rubella)</td>
+              <td>February 14, 2021</td>
+              <td>Specialty Clinic</td>
+              <td>Lifetime Protection</td>
+              <td><span class="vaccination-status completed">Completed</span></td>
+              <td><button class="vaccination-action-button">View Record</button></td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+    </main>
+
+    <footer class="vaccination-tracker-footer">
+      <p>For questions about your vaccination records or to schedule an appointment, contact your healthcare provider or visit our <a href="book-appointment.html" style="color: #A52A2A; text-decoration: none;">appointment booking page</a>.</p>
+    </footer>
+
+    <script>
+      function toggleDropdown() {
+        const dropdown = document.getElementById('locationDropdown');
+        const button = document.querySelector('.dropdown-button');
+        const isExpanded = button.getAttribute('aria-expanded') === 'true';
+        
+        if (isExpanded) {
+          dropdown.classList.remove('show');
+          button.setAttribute('aria-expanded', 'false');
+        } else {
+          dropdown.classList.add('show');
+          button.setAttribute('aria-expanded', 'true');
+        }
+      }
+      
+      // Close dropdown when clicking outside
+      window.addEventListener('click', function(event) {
+        if (!event.target.matches('.dropdown-button') && 
+            !event.target.matches('.text-wrapper-2') && 
+            !event.target.matches('.ri-arrow-down-s-line')) {
+          const dropdown = document.getElementById('locationDropdown');
+          const button = document.querySelector('.dropdown-button');
+          dropdown.classList.remove('show');
+          button.setAttribute('aria-expanded', 'false');
+        }
+      });
+      
+      // Keyboard navigation
+      document.addEventListener('keydown', function(event) {
+        const dropdown = document.getElementById('locationDropdown');
+        const button = document.querySelector('.dropdown-button');
+        
+        // Close dropdown on Escape key
+        if (event.key === 'Escape' && dropdown.classList.contains('show')) {
+          dropdown.classList.remove('show');
+          button.setAttribute('aria-expanded', 'false');
+          button.focus();
+        }
+      });
+    </script>
+  </body>
+</html>

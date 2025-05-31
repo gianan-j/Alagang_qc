@@ -1694,4 +1694,444 @@ body {
   box-shadow: 0 4px 12px rgba(165, 42, 42, 0.3);
 }
 
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-color: #f4f4f4;
+}
+
+header {
+    background: url('') center/cover no-repeat; /* Para sa background to*/
+    padding: 20px;
+    text-align: center;
+    color: white;
+}
+
+h1 {
+    font-size: 2.5em;
+}
+
+h2 {
+    color: #555;
+}
+
+.vaccine-info, .vaccine-history {
+    padding: 20px;
+    background-color: white;
+    margin: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+.action-button {
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.action-button:hover {
+    background-color: #0056b3;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #444;
+    color: white;
+}
+
+
 /* ... existing code ... */
+
+/* Vaccination Tracker Page Styles */
+.vaccination-tracker-body {
+  font-family: "Inter-Regular", Helvetica;
+  margin: 0;
+  padding: 0;
+  color: #000000;
+  background-color: #F2EDE5; /* Match your site's background */
+  min-height: 100vh;
+}
+
+.vaccination-tracker-header {
+  background: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 0.3) 0%,
+    rgba(0, 0, 0, 0.3) 100%
+  ), url('./imgs/qc-vax-aug.jpg') center/cover no-repeat; /* Background image placeholder */
+  padding: 60px 20px;
+  text-align: center;
+  color: white;
+  position: relative;
+  min-height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.vaccination-tracker-header::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.4); /* Overlay for better text readability */
+  z-index: 1;
+}
+
+.vaccination-tracker-header > * {
+  position: relative;
+  z-index: 2;
+}
+
+.vaccination-tracker-header h1 {
+  font-family: "Inter-Bold", Helvetica;
+  font-size: clamp(32px, 4vw, 48px);
+  font-weight: 700;
+  margin: 0 0 16px 0;
+  letter-spacing: -0.5px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.vaccination-tracker-header p {
+  font-family: "Inter-Regular", Helvetica;
+  font-size: clamp(16px, 2vw, 20px);
+  margin: 0;
+  opacity: 0.9;
+  max-width: 600px;
+  line-height: 1.5;
+}
+
+.vaccination-main-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 60px 20px;
+}
+
+.vaccination-tracker-h2 {
+  font-family: "Inter-Bold", Helvetica;
+  font-size: clamp(24px, 3vw, 32px);
+  font-weight: 700;
+  color: #000000;
+  margin: 0 0 32px 0;
+  text-align: center;
+  letter-spacing: -0.5px;
+}
+
+.vaccine-info, .vaccine-history {
+  padding: 32px;
+  background-color: white;
+  margin: 32px 0;
+  border-radius: 20px; /* Match your site's border radius */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border: 1px solid #e9ecef;
+}
+
+.vaccine-info h2, .vaccine-history h2 {
+  font-family: "Inter-SemiBold", Helvetica;
+  font-size: clamp(20px, 2.5vw, 24px);
+  font-weight: 600;
+  color: #000000;
+  margin: 0 0 24px 0;
+  padding-bottom: 12px;
+  border-bottom: 2px solid #A52A2A; /* Match your site's primary color */
+}
+
+.vaccine-info p, .vaccine-history p {
+  font-family: "Inter-Regular", Helvetica;
+  font-size: 16px;
+  color: #666666;
+  line-height: 1.6;
+  margin: 0 0 20px 0;
+}
+
+.vaccination-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  background-color: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.vaccination-table th {
+  background-color: #A52A2A; /* Match your site's primary color */
+  color: white;
+  font-family: "Inter-SemiBold", Helvetica;
+  font-weight: 600;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  padding: 16px 12px;
+  text-align: left;
+  border: none;
+}
+
+.vaccination-table td {
+  font-family: "Inter-Regular", Helvetica;
+  font-size: 14px;
+  color: #000000;
+  padding: 16px 12px;
+  border-bottom: 1px solid #e9ecef;
+  text-align: left;
+}
+
+.vaccination-table tr:last-child td {
+  border-bottom: none;
+}
+
+.vaccination-table tr:nth-child(even) {
+  background-color: #f8f9fa;
+}
+
+.vaccination-table tr:hover {
+  background-color: #F2EDE5; /* Match your site's hover color */
+}
+
+.vaccination-action-button {
+  font-family: "Inter-SemiBold", Helvetica;
+  font-weight: 600;
+  font-size: 14px;
+  padding: 10px 20px;
+  background-color: #A52A2A; /* Match your site's primary color */
+  color: white;
+  border: none;
+  border-radius: 20px; /* Match your site's button border radius */
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.vaccination-action-button:hover {
+  background-color: #8B1A1A; /* Match your site's hover color */
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(165, 42, 42, 0.3);
+}
+
+.vaccination-action-button:active {
+  transform: translateY(0);
+}
+
+.vaccination-action-button:focus-visible {
+  outline: 2px solid #000000;
+  outline-offset: 2px;
+}
+
+.vaccination-tracker-footer {
+  background-color: #F2EDE5; /* Match your site's background */
+  padding: 40px 20px;
+  text-align: center;
+  border-top: 1px solid #e9ecef;
+}
+
+.vaccination-tracker-footer p {
+  font-family: "Inter-Regular", Helvetica;
+  font-size: 16px;
+  color: #666666;
+  margin: 0;
+  line-height: 1.5;
+}
+
+/* Vaccination Status Badges */
+.vaccination-status {
+  display: inline-block;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-family: "Inter-SemiBold", Helvetica;
+  font-weight: 600;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.vaccination-status.completed {
+  background-color: #d4edda;
+  color: #155724;
+  border: 1px solid #c3e6cb;
+}
+
+.vaccination-status.pending {
+  background-color: #fff3cd;
+  color: #856404;
+  border: 1px solid #ffeaa7;
+}
+
+.vaccination-status.overdue {
+  background-color: #f8d7da;
+  color: #721c24;
+  border: 1px solid #f5c6cb;
+}
+
+/* Vaccination Cards Layout */
+.vaccination-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 24px;
+  margin: 32px 0;
+}
+
+.vaccination-card {
+  background: white;
+  border-radius: 20px;
+  padding: 24px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border: 1px solid #e9ecef;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.vaccination-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+}
+
+.vaccination-card h3 {
+  font-family: "Inter-SemiBold", Helvetica;
+  font-weight: 600;
+  font-size: 18px;
+  color: #000000;
+  margin: 0 0 12px 0;
+}
+
+.vaccination-card p {
+  font-family: "Inter-Regular", Helvetica;
+  font-size: 14px;
+  color: #666666;
+  line-height: 1.5;
+  margin: 0 0 16px 0;
+}
+
+.vaccination-card .vaccination-action-button {
+  width: 100%;
+  justify-content: center;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .vaccination-main-content {
+    padding: 40px 16px;
+  }
+  
+  .vaccine-info, .vaccine-history {
+    padding: 24px 20px;
+    margin: 24px 0;
+  }
+  
+  .vaccination-table {
+    font-size: 12px;
+  }
+  
+  .vaccination-table th,
+  .vaccination-table td {
+    padding: 12px 8px;
+  }
+  
+  .vaccination-cards {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  
+  .vaccination-tracker-header {
+    padding: 40px 20px;
+    min-height: 250px;
+  }
+}
+
+@media (max-width: 480px) {
+  .vaccination-main-content {
+    padding: 32px 12px;
+  }
+  
+  .vaccine-info, .vaccine-history {
+    padding: 20px 16px;
+  }
+  
+  .vaccination-table th,
+  .vaccination-table td {
+    padding: 10px 6px;
+    font-size: 11px;
+  }
+  
+  .vaccination-action-button {
+    padding: 8px 16px;
+    font-size: 12px;
+  }
+}
+
+/* Print Styles */
+@media print {
+  .vaccination-tracker-body {
+    background: white;
+  }
+  
+  .vaccination-tracker-header {
+    background: #A52A2A;
+    color: white;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+  
+  .vaccination-action-button {
+    display: none;
+  }
+  
+  .vaccine-info, .vaccine-history {
+    box-shadow: none;
+    border: 1px solid #000;
+  }
+}
+
+/* High Contrast Mode Support */
+@media (prefers-contrast: high) {
+  .vaccination-table th {
+    border: 2px solid #000;
+  }
+  
+  .vaccination-table td {
+    border: 1px solid #000;
+  }
+  
+  .vaccination-action-button {
+    border: 2px solid #000;
+  }
+}
+
+/* Reduced Motion Support */
+@media (prefers-reduced-motion: reduce) {
+  .vaccination-action-button,
+  .vaccination-card {
+    transition: none;
+  }
+  
+  .vaccination-action-button:hover,
+  .vaccination-card:hover {
+    transform: none;
+  }
+}
+
+/* Add this CSS to ensure proper alignment of the vaccination action button */
+
+
