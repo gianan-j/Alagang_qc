@@ -5,6 +5,7 @@
     <meta charset="utf-8" />
     <link rel="stylesheet" href="globals.css" />
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="styles.css">
   </head>
   <body>
     <div class="HEADER">
@@ -40,79 +41,72 @@
       </header>
     </div>
     
-<div class="about-us-section">
-        <h2 class="about-us-title">ABOUT US</h2>
-        <div class="about-us-grid">
-          <div class="about-us-column">
-            <div class="about-us-image">
-              <img src="./imgs/qc_city_hall.png" alt="Quezon City Health Center Building" />
-            </div>
-            <h3 class="column-title">Introduction</h3>
-            <p class="column-text">
-              Alagang Bayan Quezon City Health Information System is a digital initiative by the Quezon City Government aimed at transforming how health services are delivered and managed across the city.
-            </p>
-          </div>
-          
-          <div class="about-us-column">
-            <div class="about-us-image">
-              <img src="./imgs/edsa_statue.jpg" alt="Quezon City Monument representing healthcare objectives" />
-            </div>
-            <h3 class="column-title">Key Objectives</h3>
-            <p class="column-text">
-              Designed with local residents and healthcare workers in mind, the system provides a centralized, secure, and user-friendly platform for managing patient records, scheduling appointments, and tracking vaccinations.
-            </p>
-          </div>
-          
-          <div class="about-us-column">
-            <div class="about-us-image">
-              <img src="./imgs/oblation.jpg" alt="Government building representing security and privacy" />
-            </div>
-            <h3 class="column-title">Commitment to Privacy & Security</h3>
-            <p class="column-text">
-              At Alagang Bayan Quezon City Health Information System, we prioritize the privacy and security of your health data. We comply with the Data Privacy Act of 2012 and implement strict safeguards to ensure your information is protected, confidential, and accessed only by authorized personnel.
-            </p>
-            <p class="column-text-secondary">
-              Your trust matters to us—and we're committed to keeping your health information safe at all times.
-            </p>
-          </div>
-        </div>
-      </div>
+    <section class="registration-section">
+  <div class="registration-content">
+    <div class="left-column">
+      <h1 class="main-heading">MABUHAY!</h1>
+      <p class="welcome-text">
+        Welcome to Alagang Bayan, your digital health partner in Quezon City. Share your feedback to help us improve your healthcare experience.
+      </p>
+    </div>
+    
+    <div class="right-column">
+      <div class="feedback-form-container">
+        <h1 class="feedback-form-title">FEEDBACK FORM</h1>
+        <form class="feedback-form">
+          <label for="first-name">First name</label>
+          <input type="text" id="first-name" name="first-name" placeholder="Alagang" required>
 
+          <label for="last-name">Last name</label>
+          <input type="text" id="last-name" name="last-name" placeholder="Bayan" required>
 
-    <footer class="footer-section">
-  <div class="footer-background">
-    <div class="footer-content">
-      <div class="footer-left">
-        <h3 class="footer-title">ALAGANG BAYAN:</h3>
-        <p class="footer-subtitle">QUEZON CITY MUNICIPAL HEALTH INFORMATION SYSTEM</p>
-        <div class="social-media-icons">
-          <img src="./imgs/fb_Icon.svg" alt="Facebook" class="social-icon" />
-          <img src="./imgs/linkedin_Icon.svg" alt="LinkedIn" class="social-icon" />
-          <img src="./imgs/yt_Icon.svg" alt="YouTube" class="social-icon" />
-          <img src="./imgs/ig_Icon.svg" alt="Instagram" class="social-icon" />
-        </div>
-      </div>
-      <div class="footer-center">
-        <h4 class="footer-heading">Hotlines:</h4>
-        <p class="footer-phone">+1702921379</p>
-        <p class="footer-phone">+09123456789</p>
-      </div>
-      <div class="footer-right">
-        <h4 class="footer-heading">Email Us:</h4>
-        <p class="footer-email">alagangbayan.qc.ph@gmail.com</p>
-        <p class="footer-email">info@alagangbayan.qc.ph</p>
-        <h4 class="footer-heading">Support:</h4>
-        <ul class="footer-support-list">
-          <li><a href="feedback.html" class="footer-support-link">Feedback Form</a></li>
-          <li><a href="#" class="footer-support-link">Chatbot</a></li>
-          <li><a href="#" class="footer-support-link">FAQS</a></li>
-        </ul>
+          <label for="email">Email address</label>
+          <input type="email" id="email" name="email" placeholder="alagangbayan.qc.ph@email.com" required>
+
+          <label for="message">Your message</label>
+          <textarea id="message" name="message" rows="4" placeholder="Enter your question or message" required></textarea>
+
+          <button type="submit">Submit</button>
+        </form>
       </div>
     </div>
   </div>
-</footer>
+</section>
 
-  <script>
+    <footer class="footer-section">
+      <div class="footer-background">
+        <div class="footer-content">
+          <div class="footer-left">
+            <h3 class="footer-title">ALAGANG BAYAN:</h3>
+            <p class="footer-subtitle">QUEZON CITY MUNICIPAL HEALTH INFORMATION SYSTEM</p>
+            <div class="social-media-icons">
+              <img src="./imgs/fb_Icon.svg" alt="Facebook" class="social-icon" />
+              <img src="./imgs/linkedin_Icon.svg" alt="LinkedIn" class="social-icon" />
+              <img src="./imgs/yt_Icon.svg" alt="YouTube" class="social-icon" />
+              <img src="./imgs/ig_Icon.svg" alt="Instagram" class="social-icon" />
+            </div>
+          </div>
+          <div class="footer-center">
+            <h4 class="footer-heading">Hotlines:</h4>
+            <p class="footer-phone">+1702921379</p>
+            <p class="footer-phone">+09123456789</p>
+          </div>
+          <div class="footer-right">
+            <h4 class="footer-heading">Email Us:</h4>
+            <p class="footer-email">alagangbayan.qc.ph@gmail.com</p>
+            <p class="footer-email">info@alagangbayan.qc.ph</p>
+            <h4 class="footer-heading">Support:</h4>
+            <ul class="footer-support-list">
+              <li><a href="#" class="footer-support-link">Feedback Form</a></li>
+              <li><a href="#" class="footer-support-link">Chatbot</a></li>
+              <li><a href="#" class="footer-support-link">FAQS</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script>
       function scrollServices(direction) {
         const container = document.getElementById('servicesScroll');
         const scrollAmount = 320; // Width of one card plus gap
@@ -169,6 +163,5 @@
         }
       });
     </script>
-
   </body>
 </html>
