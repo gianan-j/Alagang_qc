@@ -74,6 +74,7 @@
   justify-content: space-between;
   flex: 1;
   flex-grow: 1;
+  flex-wrap: wrap;
   display: flex;
   align-items: center;
   position: relative;
@@ -93,11 +94,12 @@
   letter-spacing: 0;
   line-height: 30px;
   text-decoration: none;
-  padding: 8px 16px;
+  padding: 8px 12px;
   border-radius: 6px;
   transition: all 0.3s ease;
   cursor: pointer;
   display: block;
+  white-space: nowwrap;
 }
 
 .nav-link:hover {
