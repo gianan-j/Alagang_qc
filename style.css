@@ -20,7 +20,7 @@
 }
 
 .HEADER .frame {
-  width: 100%; /* Changed from fixed width to auto */
+  width: auto; /* Changed from fixed width to auto */
   gap: 20px; /* Increased gap for better spacing */
   display: flex;
   align-items: center;
