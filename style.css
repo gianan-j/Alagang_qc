@@ -343,6 +343,7 @@ body {
   flex-direction: column;
   gap: 16px;
   align-items: center; /* Center align content */
+  margin: 0 auto;
 }
 
 .about-us-image {
