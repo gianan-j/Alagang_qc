@@ -1,7 +1,7 @@
 .HEADER {
-  display: flex;
+  display: center;
   height: 145px;
-  align-items: flex-start;
+  align-items: center;
   position: fixed;
   z-index: 1000;
   top: 0;
