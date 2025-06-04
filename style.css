@@ -1,5 +1,5 @@
 .HEADER {
-  display: center;
+  display: flex;
   height: 145px;
   align-items: center;
   position: fixed;
@@ -18,7 +18,7 @@
   position: fixed;
   background-color: #ffffff;
   max-width: 100%;
-  margin: 0 auto;
+  margin: 0;
 }
 
 .HEADER .frame {
@@ -135,7 +135,7 @@
 .main-content {
   margin-top;
   max-width: 1440px;
-  margin: 0 auto;
+  margin: 0;
   padding: 20px;
 }
 
