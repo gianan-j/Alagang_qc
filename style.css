@@ -1116,7 +1116,6 @@ body {
   background-color: #ffffff; /* White background for content area */
   padding: 20px 0; /* Padding for top and bottom */
   bottom: 0;
-  position: fixed;
 }
 
 .footer-content {
@@ -1176,7 +1175,7 @@ body {
 
 .footer-right {
   flex: 1; /* Allow right column to grow */
-  min-width: 150px; /* Minimum width for right column */
+  min-width: 250px; /* Minimum width for right column */
 }
 
 .footer-email {
