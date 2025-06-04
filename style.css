@@ -135,8 +135,9 @@
 /* Main content container for proper spacing */
 .main-content {
   margin-top: 145px;
-  margin-left: auto;
-  margin-right: auto;
+  margin-bottom: 145px;
+  margin-left: 290px;
+  margin-right: 290px;
   width: 100%;
   max-width: 1200px;
   padding: 10px 20px;
