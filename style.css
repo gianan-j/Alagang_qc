@@ -1101,10 +1101,10 @@ body {
 }
 
 .footer-section {
-  height: 265px; /* Fixed height */
+  height: 245px; /* Fixed height */
   background-color: #F2EDE5; /* Light beige background */
   width: 100%; /* Full width */
-  padding: 20px 0; /* Padding for top and bottom */
+  padding: 40px 20px; /* Padding for top and bottom */
 }
 
 .footer-background {
@@ -1119,9 +1119,9 @@ body {
   display: flex;
   justify-content: space-between; /* Space columns evenly */
   align-items: flex-start; /* Align items at the start */
-  max-width: 1200px; /* Max width for the footer */
-  margin: 0 auto; /* Center the footer */
-  padding: 0 20px; /* Consistent padding on the sides */
+  width: 100%; /* Max width for the footer */
+  margin: 0; /* Center the footer */
+  padding: 0 40px; /* Consistent padding on the sides */
   flex-wrap: wrap; /* Allow wrapping for responsiveness */
 }
 
