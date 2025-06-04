@@ -1,0 +1,239 @@
+/* Services Section */
+.services-section {
+  margin-top: 100px; /* 100px spacing below Vision Mission section */
+  padding: 20px; /* Balanced padding around the section */
+  font-family: 'Arial', sans-serif; /* Clean, sans-serif font */
+}
+
+.services-title{
+  font-size: larger;
+}
+
+.services-section h2 {
+  font-weight: bold; /* Bold heading */
+  color: black; /* Black text color */
+  margin-bottom: 20px; /* Margin below the heading */
+  text-align: left; /* Align heading to the left */
+}
+
+.services-controls {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.view-all-link {
+  font-family: "Inter-SemiBold", Helvetica;
+  font-weight: 600;
+  font-size: 16px;
+  color: #000000;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.view-all-link:hover {
+  color: #666666;
+}
+
+.scroll-button {
+  width: 40px;
+  height: 40px;
+  border: 2px solid #000000;
+  background-color: transparent;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 20px;
+  font-weight: bold;
+  color: #000000;
+}
+
+.scroll-button:hover {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+.scroll-button:active {
+  transform: scale(0.95);
+}
+
+.services-container {
+  position: relative;
+  overflow: hidden;
+}
+
+.services-scroll {
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  padding-bottom: 10px;
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE and Edge */
+}
+
+.services-scroll::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Opera */
+}
+
+.service-card {
+  flex: 0 0 300px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+}
+
+.service-image {
+  width: 100%;
+  height: 180px;
+  overflow: hidden;
+}
+
+.service-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.service-content {
+  padding: 20px;
+}
+
+.service-title {
+  font-family: "Inter-SemiBold", Helvetica;
+  font-weight: 600;
+  font-size: 18px;
+  color: #000000;
+  margin: 0 0 12px 0;
+  line-height: 1.4;
+}
+
+.service-description {
+  font-family: "Inter-Regular", Helvetica;
+  font-weight: 400;
+  font-size: 24px;
+  color: #666666;
+  line-height: 1.6;
+  margin: 0;
+  text-align: left;
+}
+
+.service-item {
+  display: flex; /* Horizontal layout for each service block */
+  align-items: center; /* Center align items vertically */
+  margin-bottom: 20px; /* Consistent vertical spacing between service blocks */
+}
+
+.service-item img {
+  width: 511px; /* Fixed width for the image */
+  height: 330px; /* Fixed height for the image */
+  object-fit: cover; /* Maintain aspect ratio */
+  margin-right: 20px; /* Margin to the right of the image */
+}
+
+.service-description {
+  display: flex;
+  flex-direction: column; /* Stack title and description vertically */
+}
+
+.service-description h3 {
+  font-weight: bold; /* Bold service title */
+  color: black; /* Black text color */
+  margin: 0; /* Remove default margin */
+}
+
+.service-description p {
+  color: #7a7a7a; /* Gray text color for description */
+  font-weight: normal; /* Normal font weight */
+  line-height: 1.5; /* Line spacing for readability */
+  margin-top: 5px; /* Margin above the paragraph */
+}
+
+/* Responsive adjustments for Services section */
+@media (max-width: 1440px) {
+  .services-section {
+    padding: 0 30px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .services-section {
+    margin-top: 80px;
+  }
+  
+  .services-header {
+    margin-bottom: 30px;
+  }
+  
+  .services-controls {
+    gap: 15px;
+  }
+  
+  .scroll-button {
+    width: 36px;
+    height: 36px;
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 768px) {
+  .services-section {
+    padding: 0 20px;
+    margin-top: 60px;
+  }
+  
+  .services-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+    margin-bottom: 25px;
+  }
+  
+  .services-controls {
+    align-self: flex-end;
+  }
+  
+  .service-card {
+    flex: 0 0 280px;
+  }
+}
+
+@media (max-width: 480px) {
+  .services-section {
+    margin-top: 40px;
+  }
+  
+  .services-header {
+    gap: 15px;
+    margin-bottom: 20px;
+  }
+  
+  .services-controls {
+    gap: 10px;
+  }
+  
+  .scroll-button {
+    width: 32px;
+    height: 32px;
+    font-size: 16px;
+  }
+  
+  .service-card {
+    flex: 0 0 260px;
+  }
+  
+  .service-content {
+    padding: 16px;
+  }
+}
