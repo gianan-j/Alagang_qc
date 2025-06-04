@@ -4,6 +4,8 @@
   align-items: flex-start;
   position: fixed;
   z-index: 1000;
+  top: 0;
+  left: 0;
 }
 
 .HEADER .header {
@@ -131,9 +133,10 @@
 
 /* Main content container for proper spacing */
 .main-content {
+  margin-top;
   max-width: 1440px;
   margin: 0 auto;
-  padding: 0 75px;
+  padding: 20px;
 }
 
 .hero-image {
