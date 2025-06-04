@@ -8,11 +8,11 @@
 
 .HEADER .header {
   display: flex;
-  width: 1440px;
+  width: 100%;
   height: 145px;
   align-items: center;
   justify-content: center;
-  padding: 0px 75px;
+  padding: 20px;
   position: relative;
   background-color: #ffffff;
   max-width: 100%;
