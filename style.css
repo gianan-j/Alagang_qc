@@ -332,10 +332,11 @@ body {
 }
 
 .about-us-grid {
-  display: grid;
+  display: flex;
   grid-template-columns: repeat(3, 1fr);
   gap: 40px;
   align-items: start;
+  justify-content: center;
 }
 
 .about-us-column {
