@@ -25,7 +25,6 @@
   width: 100%; /* Changed from fixed width to auto */
   gap: 20px; /* Increased gap for better spacing */
   max-width: 1200px;
-  padding: 0 40px;
   display: flex;
   align-items: center;
 }
@@ -219,7 +218,7 @@
   }
   
   .main-content {
-    padding: 0;
+    padding: 0 40px;
   }
 }
 
