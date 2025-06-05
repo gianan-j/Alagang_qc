@@ -1,0 +1,292 @@
+/* About Us Section */
+.about-us-section {
+  margin-top: 100px; /* 100px spacing below hero image */
+  padding: 0 40px;
+  max-width: 1290px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.about-us-title {
+  font-family: "Inter-Bold", Helvetica;
+  font-weight: 700;
+  font-size: clamp(28px, 3vw, 36px);
+  color: #000000;
+  margin-bottom: 40px;
+  letter-spacing: 1px;
+}
+
+.about-us-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+  align-items: start;
+}
+
+.about-us-column {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: center; /* Center align content */
+}
+
+.about-us-image {
+  width: 405px;
+  height: 405px;
+  border-radius: 8px;
+  overflow: hidden;
+  margin-bottom: 8px;
+  flex-shrink: 0; /* Prevent shrinking */
+}
+
+.about-us-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.column-title {
+  font-family: "Inter-SemiBold", Helvetica;
+  font-weight: 600;
+  font-size: clamp(16px, 1.5vw, 18px);
+  color: #000000;
+  margin: 0;
+  line-height: 1.4;
+  text-align: center;
+}
+
+.column-text {
+  font-family: "Inter-Regular", Helvetica;
+  font-weight: 400;
+  font-size: clamp(14px, 1.2vw, 16px);
+  color: #666666;
+  line-height: 1.6;
+  margin: 0;
+  text-align: justify;
+}
+
+.column-text-secondary {
+  font-family: "Inter-Regular", Helvetica;
+  font-weight: 400;
+  font-size: clamp(13px, 1.1vw, 15px);
+  color: #888888;
+  line-height: 1.5;
+  margin: 8px 0 0 0;
+  font-style: italic;
+  text-align: center;
+}
+
+/* Responsive adjustments for About Us section */
+@media (max-width: 1440px) {
+  .about-us-section {
+    padding: 0 30px;
+  }
+  
+  .about-us-grid {
+    gap: 30px;
+  }
+  
+  /* Scale down images proportionally on smaller screens while maintaining aspect ratio */
+  .about-us-image {
+    width: 350px;
+    height: 350px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .about-us-image {
+    width: 300px;
+    height: 300px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .about-us-section {
+    margin-top: 80px;
+  }
+  
+  .about-us-grid {
+    gap: 25px;
+  }
+  
+  .about-us-image {
+    width: 280px;
+    height: 280px;
+  }
+}
+
+@media (max-width: 768px) {
+  .about-us-section {
+    padding: 0 20px;
+    margin-top: 60px;
+  }
+  
+  .about-us-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+  
+  /* Maintain larger size on mobile since we have more space in single column */
+  .about-us-image {
+    width: 350px;
+    height: 350px;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-us-section {
+    margin-top: 40px;
+  }
+  
+  .about-us-grid {
+    gap: 30px;
+  }
+  
+  /* Scale down for very small screens */
+  .about-us-image {
+    width: 280px;
+    height: 280px;
+  }
+}
+
+@media (max-width: 320px) {
+  .about-us-image {
+    width: 250px;
+    height: 250px;
+  }
+}
+
+/* Vision Mission Section */
+.vision-mission-section {
+  margin-top: 100px; /* 100px spacing below hero image */
+  padding: 0 40px;
+  max-width: 1290px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.vision-mission-container {
+  display: flex;
+  gap: 60px;
+  align-items: flex-start;
+}
+
+.vision-mission-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.vision-section,
+.mission-section,
+.who-we-are-section {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.vision-mission-title {
+  font-family: "Inter-Bold", Helvetica;
+  font-weight: 700;
+  font-size: clamp(18px, 2vw, 22px);
+  color: #000000;
+  margin: 0;
+  letter-spacing: 0.5px;
+  text-align: left;
+}
+
+.vision-mission-text {
+  font-family: "Inter-Regular", Helvetica;
+  font-weight: 400;
+  font-size: clamp(14px, 1.2vw, 16px);
+  color: #333333;
+  line-height: 1.6;
+  margin: 0;
+  text-align: justify;
+}
+
+.monument-image {
+  flex-shrink: 0;
+  width: 400px;
+  height: auto;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.monument-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+/* Responsive adjustments for Vision Mission section */
+@media (max-width: 1440px) {
+  .vision-mission-section {
+    padding: 0 30px;
+  }
+  
+  .vision-mission-container {
+    gap: 40px;
+  }
+  
+  .monument-image {
+    width: 350px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .vision-mission-section {
+    margin-top: 80px;
+  }
+  
+  .vision-mission-container {
+    gap: 30px;
+  }
+  
+  .monument-image {
+    width: 300px;
+  }
+}
+
+@media (max-width: 768px) {
+  .vision-mission-section {
+    padding: 0 20px;
+    margin-top: 60px;
+  }
+  
+  .vision-mission-container {
+    flex-direction: column;
+    gap: 40px;
+    align-items: center;
+  }
+  
+  .vision-mission-content {
+    width: 100%;
+    gap: 30px;
+  }
+  
+  .monument-image {
+    width: 100%;
+    max-width: 400px;
+    align-self: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .vision-mission-section {
+    margin-top: 40px;
+  }
+  
+  .vision-mission-content {
+    gap: 25px;
+  }
+  
+  .vision-section,
+  .mission-section,
+  .who-we-are-section {
+    gap: 12px;
+  }
+}

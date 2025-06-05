@@ -2,8 +2,13 @@
   display: flex;
   height: 145px;
   align-items: flex-start;
-  position: relative;
-  z-index: 10;
+  justify-content: center;
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #ffffff;
 }
 
 .HEADER .header {
@@ -12,19 +17,18 @@
   height: 145px;
   align-items: center;
   justify-content: center;
-  padding: 0px 75px;
-  position: relative;
-  background-color: #ffffff;
-  max-width: 100%;
+  padding: 0 75px;
+  max-width: 1200px;
   margin: 0 auto;
 }
 
 .HEADER .frame {
-  width: auto; /* Changed from fixed width to auto */
+  width: 100%; /* Changed from fixed width to auto */
   gap: 20px; /* Increased gap for better spacing */
+  max-width: 1200px;
   display: flex;
   align-items: center;
-  position: relative;
+  padding: 0 40px;
 }
 
 .HEADER .LOGO {
@@ -89,7 +93,7 @@
   letter-spacing: 0;
   line-height: 30px;
   text-decoration: none;
-  padding: 8px 16px;
+  padding: 8px 12px;
   border-radius: 6px;
   transition: all 0.3s ease;
   cursor: pointer;
@@ -131,9 +135,13 @@
 
 /* Main content container for proper spacing */
 .main-content {
+  margin-top: 145px;
+  margin-bottom: 145px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
   max-width: 1440px;
-  margin: 0 auto;
-  padding: 0 75px;
+  padding: 25px 75px 0;
 }
 
 .hero-image {
@@ -310,7 +318,7 @@ body {
 /* About Us Section */
 .about-us-section {
   margin-top: 100px; /* 100px spacing below hero image */
-  padding: 0 40px;
+  padding: 95px 75px 0;
   max-width: 1290px;
   margin-left: auto;
   margin-right: auto;
@@ -326,10 +334,11 @@ body {
 }
 
 .about-us-grid {
-  display: grid;
+  display: flex;
   grid-template-columns: repeat(3, 1fr);
   gap: 40px;
   align-items: start;
+  justify-content: center;
 }
 
 .about-us-column {
@@ -337,6 +346,7 @@ body {
   flex-direction: column;
   gap: 16px;
   align-items: center; /* Center align content */
+  margin: 0 auto;
 }
 
 .about-us-image {
@@ -603,7 +613,7 @@ body {
 /* Services Section */
 .services-section {
   margin-top: 100px; /* 100px spacing below Vision Mission section */
-  padding: 20px; /* Balanced padding around the section */
+  padding: 95px 75px 0; /* Balanced padding around the section */
   font-family: 'Arial', sans-serif; /* Clean, sans-serif font */
 }
 
@@ -1000,7 +1010,7 @@ body {
 .feedback-section {
   margin-top: 100px; /* Space below the services section */
   background-color: #F2EDE5; /* Background color */
-  padding: 40px 0; /* Padding for top and bottom */
+  padding: 150px 75px 0; /* Padding for top and bottom */
   text-align: center; /* Center align text */
 }
 
@@ -1206,7 +1216,7 @@ body {
 
 .registration-section {
   background-color: #F2EDE5; /* Light beige background for the section */
-  padding: 40px 20px; /* Padding for top and bottom */
+  padding: 150px 75px 0; /* Padding for top and bottom */
 }
 
 .registration-content {
@@ -1425,7 +1435,7 @@ body {
   margin-top: 100px; /* Position the section 100 pixels below the header */
   display: flex; /* Use flexbox for horizontal layout */
   align-items: center; /* Vertically center the image relative to the text */
-  padding: 20px; /* Balanced padding around the section */
+  padding: 95px 75px 0; /* Balanced padding around the section */
 }
 
 .district-text {
