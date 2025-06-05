@@ -317,7 +317,7 @@ body {
 /* About Us Section */
 .about-us-section {
   margin-top: 100px; /* 100px spacing below hero image */
-  padding: 75px 75px 0;
+  padding: 95px 75px 0;
   max-width: 1290px;
   margin-left: auto;
   margin-right: auto;
@@ -612,7 +612,7 @@ body {
 /* Services Section */
 .services-section {
   margin-top: 100px; /* 100px spacing below Vision Mission section */
-  padding: 75px 75px 0; /* Balanced padding around the section */
+  padding: 95px 75px 0; /* Balanced padding around the section */
   font-family: 'Arial', sans-serif; /* Clean, sans-serif font */
 }
 
@@ -1009,7 +1009,7 @@ body {
 .feedback-section {
   margin-top: 100px; /* Space below the services section */
   background-color: #F2EDE5; /* Background color */
-  padding: 85px 75px 0; /* Padding for top and bottom */
+  padding: 150px 75px 0; /* Padding for top and bottom */
   text-align: center; /* Center align text */
 }
 
@@ -1214,7 +1214,7 @@ body {
 
 .registration-section {
   background-color: #F2EDE5; /* Light beige background for the section */
-  padding: 40px 20px; /* Padding for top and bottom */
+  padding: 150px 75px 0; /* Padding for top and bottom */
 }
 
 .registration-content {
@@ -1433,7 +1433,7 @@ body {
   margin-top: 100px; /* Position the section 100 pixels below the header */
   display: flex; /* Use flexbox for horizontal layout */
   align-items: center; /* Vertically center the image relative to the text */
-  padding: 20px; /* Balanced padding around the section */
+  padding: 95px 75px 0; /* Balanced padding around the section */
 }
 
 .district-text {
