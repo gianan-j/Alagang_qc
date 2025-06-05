@@ -1104,9 +1104,9 @@ body {
 }
 
 .footer-section {
-  height: 245px; /* Fixed height */
+  height: 215px; /* Fixed height */
   background-color: #F2EDE5; /* Light beige background */
-  width: 100%; /* Full width */
+  max-width: 100%; /* Full width */
   padding: 40px 20px; /* Padding for top and bottom */
 }
 
