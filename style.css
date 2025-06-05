@@ -1104,10 +1104,10 @@ body {
 }
 
 .footer-section {
-  height: 215px; /* Fixed height */
+  height: 265px; /* Fixed height */
   background-color: #F2EDE5; /* Light beige background */
-  max-width: 100%; /* Full width */
-  padding: 40px 20px; /* Padding for top and bottom */
+  width: 100%; /* Full width */
+  padding: 20px 0; /* Padding for top and bottom */
 }
 
 .footer-background {
@@ -1115,24 +1115,22 @@ body {
   display: block;
   height: 265px; /* Fixed height */
   background-color: #ffffff; /* White background for content area */
-  padding: 20px 0; /* Padding for top and bottom */
-  bottom: 0;
+  padding: 20px; /* Padding for top and bottom */
 }
 
 .footer-content {
   display: flex;
   justify-content: space-between; /* Space columns evenly */
   align-items: flex-start; /* Align items at the start */
-  width: 100%; /* Max width for the footer */
-  margin: 0; /* Center the footer */
-  padding: 0 40px; /* Consistent padding on the sides */
+  max-width: 1200px; /* Max width for the footer */
+  margin: 0 auto; /* Center the footer */
+  padding: 0 20px; /* Consistent padding on the sides */
   flex-wrap: wrap; /* Allow wrapping for responsiveness */
-  max-width: 1200px;
 }
 
 .footer-left {
   flex: 1; /* Allow left column to grow */
-  min-width: 250px; /* Minimum width for left column */
+  min-width: 200px; /* Minimum width for left column */
 }
 
 .footer-title {
@@ -1159,7 +1157,7 @@ body {
 
 .footer-center {
   flex: 1; /* Allow center column to grow */
-  min-width: 250px; /* Minimum width for center column */
+  min-width: 150px; /* Minimum width for center column */
 }
 
 .footer-heading {
@@ -1176,7 +1174,7 @@ body {
 
 .footer-right {
   flex: 1; /* Allow right column to grow */
-  min-width: 250px; /* Minimum width for right column */
+  min-width: 150px; /* Minimum width for right column */
 }
 
 .footer-email {
